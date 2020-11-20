@@ -1,0 +1,669 @@
+@charset "UTF-8";
+/*
+Orange color: #e67e22
+
+*/
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+
+/* GRID SETUP */
+
+/* ----------------------------------------------- */
+
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/*------------------------------------------------------*/
+
+/* ----- HEADINGS ----- */
+
+/*-------------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+strong {
+	color: yellowgreen;
+}
+
+/*-------------------------------------------------*/
+
+/* ----- PARAGRAPHS ----- */
+
+/* -------------------------------------------------*/
+
+
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+
+
+/* ---------------------------------------------------- */
+
+/* ----- ICONS ----- */
+
+/*------------------------------------------------------*/
+
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+  /*secrets to align text and icons*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+/* ----------------------------------------------------*/
+
+/* ----- LINKS ----- */
+
+/* --------------------------------------------------*/
+
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  /*
+ border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s;
+  */
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/* ------------------------------------------------ */
+
+/* ----- BUTTONS ----- */
+
+/* -------------------------------------------------*/
+
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+
+/* ----------------------------------------------- */
+
+/* HEADER */
+
+/* ----------------------------------------------- */
+
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pozadi.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.name {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name h1 {
+	margin-bottom: 50px;
+	line-height: 70px;
+}
+
+
+
+
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+/* -----------------------------------------------------*/
+
+/* MAIN NAV*/
+
+/*-----------------------------------------------------*/
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  font-weight: 400;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100%;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.8s;
+  transition: border-bottom 0.8s;
+
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+  transition: border-bottom 0.8s;
+
+}
+
+/* ---------------------------------------------
+
+Mobile navi
+
+--------------------------------------------*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+
+
+/* ----------------------------------------------- */
+
+/* NAVIGACE STICKY */
+
+/* ----------------------------------------------- */
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:rgb(68, 66, 66);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: rgb(207, 207, 207);
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
+}
+
+/* ----------------------------------------------- */
+
+/* FEATURES */
+
+/* ----------------------------------------------- */
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* ----------------------------------------------- */
+
+/* OSTATNI */
+
+/* ----------------------------------------------- */
+.section-ostatni {
+  padding: 0;
+}
+
+.ostatni-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.ostatni-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.ostatni-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.ostatni-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.ostatni-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+
+
+/* ----------------------------------------------- */
+
+/* ZNALOSTI */
+
+/* ----------------------------------------------- */
+/*
+.box{border: 1px solid red;}
+*/
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.knowledge-box {
+  margin-bottom: 5px;
+}
+
+.second {
+	margin-bottom:  -100px;
+}
+
+
+/* ----------------------------------------------- */
+/* EDUCATION */
+/* ----------------------------------------------- */
+.section-education {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../img/welding.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  content: "“";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+
+
+/* ----------------------------------------------- */
+/* OSTATNÍ DOVEDNOSTI  */
+/* ----------------------------------------------- */
+.section-plans {
+  background-color: #e3e3e3;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 5px 5px #b5b0ab;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #d8d3d3;
+}
+
+.plan-box div:first-child {
+  background-color: #dadada;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+
+/* ----------------------------------------------- */
+
+/* FOOTER */
+
+/* ----------------------------------------------- */
+
+	.about-box{
+		padding: 30px;
+		margin-bottom: 100px;
+		border-radius: 10px;
+		opacity:0.7;
+		-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.49);
+		box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.49);
+	}
+
+	.about-box:hover{
+
+		opacity:1.0;
+		transition: 1s ease;
+		-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.89);
+		box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.89);
+}
+
+.fadein img:hover{
+opacity:1;
+transition: 1s ease;
+	}
+
+	.about-box ul li{
+		font-size: 120%;
+		list-style: none;
+		line-height: 35px;
+	}
+
+
+
+/* ----------------------------------------------- */
+
+/* FOOTER */
+
+/* ----------------------------------------------- */
+
+
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(187, 49, 49);
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+  transition: color 0.2s;
+}
+
+.footer-1:hover{
+  color: #3b5998;
+}
+
+.footer-2:hover {
+  color: #00aced;
+}
+
+.footer-3:hover  {
+  color: #91dd39;
+}
+
+.footer-4:hover  {
+  color: #c0c891;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* -----------------------------------------------
+
+BACK TO TOP
+
+---------------------------------------------------*/
+
+
+.back-to-top {
+	text-decoration: none;
+	font-size: 400%;
+	color: orange;
+	position: fixed;
+	bottom: 5px;
+	right: 4%;
+	z-index: 10;
+	display: block;
+	opacity: 0.75;
+}
+.back-to-top:link,
+.back-to-top:visited{
+text-decoration: none;
+}
+
+.back-to-top:hover,
+.back-top-top:focus {
+	opacity: 1;
+	transition: opacity 0.6s;
+}
