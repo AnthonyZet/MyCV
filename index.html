@@ -1,19 +1,28 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<link rel="stylesheet"  type="text/css" href="vendors/css/normalize.css" />
-	<link rel="stylesheet"  type="text/css" href="vendors/css/grid.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet"  type="text/css" href="resources/css/style.css" />
-	<link rel="stylesheet"  type="text/css" href="resources/css/queries.css" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-  <title>AZ</title>
-	</head>
+
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <title>AZ</title>
+
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
 
 <!--
 	HEADER
@@ -21,23 +30,25 @@
 
     <body>
         <header>
-            <nav class="sticky">
+            <nav class="js--nav-top">
                 <div class="row">
+					<a href="#">
+					  <img src="resources/img/logo-white.png" alt="AZ logo" class="logo">
+                    <img src="resources/img/logo.png" alt="AZ logo" class="logo-black js--scroll-to-top"></a>
 
-                    <a href="#"><img src="resources/img/logoenty.png" alt="Omnifood logo" class="logo-black"></a>
                     <ul class="main-nav js--main-nav">
-                        <li><a href="#knowledge">Co umím</a></li>
-                        <li><a href="#education">Vzdělání, praxe</a></li>
-                        <li><a href="#plans">Ostatní znalosti</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a  href="#knowledge">Co umím</a></li>
+                        <li><a  href="#education">Vzdělání, praxe</a></li>
+                        <li><a  a href="#plans">Ostatní znalosti</a></li>
+                        <li><a  href="#about">About</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></i></a>
                 </div>
             </nav>
             <div class="name">
                 <h1><a href="#" >Antonín Zejda</a><br>Životopis</h1>
-                <a class="btn btn-full js--scroll-to-plans" href="#knowledge" id="demo">Zajímá</a>
-                <a class="btn btn-ghost js--scroll-to-start" href="#" id="nezajima">Nezajímá</a>
+                <a class="btn btn-full js--scroll-to-section-knowledge" href="#knowledge" id="demo">Zajímá</a>
+                <a class="btn btn-ghost" href="#" id="nezajima">Nezajímá</a>
             </div>
 
 		</header>
@@ -53,11 +64,11 @@
 	1
 --------------------------->
 
-		<section class="section-knowledge second js--section-plans" id="knowledge">
+		<section class="section-knowledge js--section-knowledge" id="knowledge">
             <div class="row">
                 <h2>Co ovládám, nebo se o to snažím</h2>
             </div>
-            <div class="row js--wp-3">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <img src="resources/img/html.jpg" alt="html5">
                     <h3>HTML&amp;HTML5 </h3>
@@ -123,7 +134,7 @@
 ----------------------------------->
 
 			<section class="section-znalosti" id="znalosti">
-            <div class="row js--wp-3">
+            <div class="row js--wp-2">
                 <div class="col span-1-of-4 box">
                     <img src="resources/img/github.png" alt="jquery">
                     <h3>GitHub </h3>
@@ -176,7 +187,8 @@ EDUCATION
 ----------------------------------------------------------- -->
 
 
-			<section class="section-education" id="education">
+			<section class="section-education  js--section-education " id="education">
+			<div class="js--wp-3">
             <div class="row">
                 <h2>Nejvyšší dosažené vzdělání & praxe</h2>
             </div>
@@ -211,10 +223,10 @@ EDUCATION
 
 
 
-                    </blockquote>
-			</div>
- </div>
-
+						</blockquote>
+				</div>
+	</div>
+</div>
 
 
 
@@ -233,6 +245,7 @@ OSTATNÍ DOVEDNOSTI
 
 
 		<section class="section-plans js--section-plans" id="plans">
+			 <div class="row js--wp-4">
 			 <div class="row">
                 <h2>Ostatní dovednosti, kurzy atp.</h2>
             </div>
@@ -300,8 +313,9 @@ OSTATNÍ DOVEDNOSTI
 
                     </div>
                 </div>
-            </div>
-		</section>
+			</div>
+		</div>
+	</section>
 
 		<!--- -----------------------------------------------
 
@@ -362,10 +376,10 @@ OSTATNÍ DOVEDNOSTI
 
 ------------------------------------>
 
-<section class="section-knowledge second js--section-plans" id="about">
+<section class="section-knowledge second js--section-about" id="about">
 
 
-				  <div class="row">
+				  <div class="row js--wp-5">
 
 						<div class="col span-1-of-2 box">
 							<div class="about-box">
@@ -468,10 +482,17 @@ OSTATNÍ DOVEDNOSTI
 		</section>
 -->
 
+<!------------------------------------------------
 
-			<a href="#" class="back-to-top">
+			BACK TO TOP
+
+		-------------------------------------------------------->
+
+
+			<a href="#" class="back-to-top js--scroll-to-top">
 				<ion-icon name="caret-up-circle-outline"></ion-icon>
 			</a>
+
 </div>
 
 
@@ -505,13 +526,6 @@ OSTATNÍ DOVEDNOSTI
 
 			</div>
 
-			<!------------------------------------------------
-
-			BACK TO TOP
-
-		-------------------------------------------------------->
-
-
 
 
 
@@ -521,14 +535,12 @@ OSTATNÍ DOVEDNOSTI
 
 
 		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-		<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-		<script src="vendors/js/jquery.waypoints.min.js"></script>
-
-		<script src="resources/js/jquery-3.5.1.js"></script>
-		<script src="resources/js/script.js"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 
 	</body>
 

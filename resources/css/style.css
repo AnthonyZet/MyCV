@@ -1,8 +1,8 @@
-@charset "UTF-8";
+
 /*
 Orange color: #e67e22
-
 */
+
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -257,7 +257,11 @@ header {
 	line-height: 70px;
 }
 
+/*
 
+LOGO
+
+*/
 
 
 
@@ -288,31 +292,28 @@ header {
 }
 
 .main-nav li {
-  display: inline-block;
-  margin-left: 40px;
-  font-weight: 400;
+    display: inline-block;
+	margin-left: 40px;
+	font-weight: 400;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
-  padding: 8px 0;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 100%;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: border-bottom 0.8s;
-  transition: border-bottom 0.8s;
-
-
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #e67e22;
-  transition: border-bottom 0.8s;
-
+    border-bottom: 2px solid #e67e22;
 }
+
 
 /* ---------------------------------------------
 
@@ -343,31 +344,25 @@ Mobile navi
 
 .sticky {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color:rgb(68, 66, 66);
-  box-shadow: 0 2px 2px #efefef;
-  z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+	background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
 }
 
-.sticky .main-nav {
-  margin-top: 18px;
-}
+.sticky .main-nav { margin-top: 18px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
-  padding: 16px 0;
-  color: rgb(207, 207, 207);
+    padding: 16px 0;
+    color: #555;
 }
 
-.sticky .logo {
-  display: none;
-}
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
-.sticky .logo-black {
-  display: block;
-}
 
 /* ----------------------------------------------- */
 
@@ -439,7 +434,7 @@ Mobile navi
   margin-bottom: 5px;
 }
 
-.second {
+.section-knowledge {
 	margin-bottom:  -100px;
 }
 
@@ -666,4 +661,26 @@ text-decoration: none;
 .back-top-top:focus {
 	opacity: 1;
 	transition: opacity 0.6s;
+}
+
+/*
+
+ANIMATIONS
+
+*/
+
+.js--wp-1,
+ .js--wp-2,
+  .js--wp-3,
+   .js--wp-4,
+    .js--wp-5{
+	opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated {
+	opacity: 1;
 }
