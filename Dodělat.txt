@@ -1,3 +1,0 @@
-Vymazal jsem alert
-
-Back to top js animace
