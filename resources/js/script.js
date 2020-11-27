@@ -52,89 +52,125 @@ $(document).ready(function () {
 		);
 	});
 
-	$(".js--scroll-to-top").click(function () {
-		$("html, body").animate({ scrollTop: 0});
+
 	});
 
-	/*
+	var backToTop = $("<a>", {
+		href: "#",
+		class: "back-to-top",
+		html: '	<ion-icon name="caret-up-circle-outline"></ion-icon>',
+	});
+
+	backToTop
+		.hide()
+		.appendTo("body")
+		.on("click", function () {
+			$("body").animate({ scrollTop: 0 });
+		});
+
+	var win = $(window);
+	win.on("scroll", function () {
+		if (win.scrollTop() >= 500) backToTop.fadeIn();
+		else backToTop.hide();
+	});
+
+	$(".back-to-top")
+		.hide()
+		.click(function () {
+			$("html, body").animate({ scrollTop: 0 });
+
+			/*
 
 	NAVIGATION SCROLL
 
 	*/
 
-	$(function () {
-		$("a[href*=#]:not([href=#])").click(function () {
-			if (
-				location.pathname.replace(/^\//, "") ==
-					this.pathname.replace(/^\//, "") &&
-				location.hostname == this.hostname
-			) {
-				var target = $(this.hash);
-				target = target.length
-					? target
-					: $("[name=" + this.hash.slice(1) + "]");
-				if (target.length) {
-					$("html,body").animate(
-						{
-							scrollTop: target.offset().top,
-						},
-						1000
-					);
-					return false;
+			$(function () {
+				$("a[href*=#]:not([href=#])").click(function () {
+					if (
+						location.pathname.replace(/^\//, "") ==
+							this.pathname.replace(/^\//, "") &&
+						location.hostname == this.hostname
+					) {
+						var target = $(this.hash);
+						target = target.length
+							? target
+							: $("[name=" + this.hash.slice(1) + "]");
+						if (target.length) {
+							$("html,body").animate(
+								{
+									scrollTop: target.offset().top,
+								},
+								1000
+							);
+							return false;
+						}
+					}
+				});
+			});
+
+			/* Animations on scroll */
+			$(".js--wp-1").waypoint(
+				function (direction) {
+					$(".js--wp-1").addClass("animated bounceInLeft");
+				},
+				{
+					offset: "80%",
 				}
-			}
+			);
+
+			$(".js--wp-2").waypoint(
+				function (direction) {
+					$(".js--wp-2").addClass("animated bounceInRight");
+				},
+				{
+					offset: "80%",
+				}
+			);
+
+			$(".js--wp-3").waypoint(
+				function (direction) {
+					$(".js--wp-3").addClass("animated fadeInLeft");
+				},
+				{
+					offset: "80%",
+				}
+			);
+
+			$(".js--wp-4").waypoint(
+				function (direction) {
+					$(".js--wp-4").addClass("animated fadeInRight");
+				},
+				{
+					offset: "80%",
+				}
+			);
+
+			$(".js--wp-5").waypoint(
+				function (direction) {
+					$(".js--wp-5").addClass("animated bounceInUp");
+				},
+				{
+					offset: "80%",
+				}
+			);
 		});
-	});
 
-	/* Animations on scroll */
-	$(".js--wp-1").waypoint(
-		function (direction) {
-			$(".js--wp-1").addClass("animated bounceInLeft");
-		},
-		{
-			offset: "80%",
-		}
-	);
 
-	$(".js--wp-2").waypoint(
-		function (direction) {
-			$(".js--wp-2").addClass("animated bounceInRight");
-		},
-		{
-			offset: "80%",
-		}
-	);
 
-	$(".js--wp-3").waypoint(
-		function (direction) {
-			$(".js--wp-3").addClass("animated fadeInLeft");
-		},
-		{
-			offset: "80%",
-		}
-	);
 
-	$(".js--wp-4").waypoint(
-		function (direction) {
-			$(".js--wp-4").addClass("animated fadeInRight");
-		},
-		{
-			offset: "80%",
-		}
-	);
 
-	$(".js--wp-5").waypoint(
-		function (direction) {
-			$(".js--wp-5").addClass("animated bounceInUp");
-		},
-		{
-			offset: "80%",
-		}
-	);
 
-	/*
-SCROLL TO TOP
-*/
+
+
+
+
+
+
+
+
+
+
 
 	/*
 	 * BACK TO TOP
@@ -161,7 +197,7 @@ SCROLL TO TOP
 
 
 	/*	$("html,body").animate({ scrollTop: $(this.hash).offset().top }, 1000); */
-	});
+
 
 	/*
 var waypoints = $('#handler-first').waypoint(function(direction) {

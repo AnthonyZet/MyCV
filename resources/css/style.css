@@ -294,6 +294,7 @@ LOGO
 .main-nav li {
     display: inline-block;
 	margin-left: 40px;
+	margin-bottom: 10px;
 	font-weight: 400;
 }
 
@@ -356,7 +357,7 @@ Mobile navi
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
-    padding: 16px 0;
+    padding: 2px 0;
     color: #555;
 }
 
@@ -435,7 +436,8 @@ Mobile navi
 }
 
 .section-knowledge {
-	margin-bottom:  -100px;
+	margin-bottom:  -80px;
+	margin-top: -20px;
 }
 
 
