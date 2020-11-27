@@ -323,13 +323,13 @@ Mobile navi
 --------------------------------------------*/
 .mobile-nav-icon {
     float: right;
-    margin-top: 30px;
+    margin-top: 40px;
     cursor: pointer;
     display: none;
 }
 
-.mobile-nav-icon i {
-    font-size: 200%;
+.mobile-nav-icon i{
+    font-size: 300%;
     color: #fff;
 }
 

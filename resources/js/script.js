@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+
+
 	$("#nezajima").on("click", function () {
 		alert("Klikáte špatně");
 	});
@@ -53,31 +56,6 @@ $(document).ready(function () {
 	});
 
 
-	});
-
-	var backToTop = $("<a>", {
-		href: "#",
-		class: "back-to-top",
-		html: '	<ion-icon name="caret-up-circle-outline"></ion-icon>',
-	});
-
-	backToTop
-		.hide()
-		.appendTo("body")
-		.on("click", function () {
-			$("body").animate({ scrollTop: 0 });
-		});
-
-	var win = $(window);
-	win.on("scroll", function () {
-		if (win.scrollTop() >= 500) backToTop.fadeIn();
-		else backToTop.hide();
-	});
-
-	$(".back-to-top")
-		.hide()
-		.click(function () {
-			$("html, body").animate({ scrollTop: 0 });
 
 			/*
 
@@ -155,6 +133,40 @@ $(document).ready(function () {
 				}
 			);
 		});
+
+
+		/*
+
+		BACK TO TOP
+
+		*/
+var backToTop = $("<a>", {
+	href: "#",
+	class: "back-to-top",
+	html: '	<ion-icon name="caret-up-circle-outline"></ion-icon>',
+});
+
+backToTop
+	.hide()
+	.appendTo("body")
+	.on("click", function () {
+		$("body").animate({ scrollTop: 0 });
+	});
+
+var win = $(window);
+win.on("scroll", function () {
+	if (win.scrollTop() >= 600) backToTop.fadeIn();
+	else backToTop.hide();
+});
+
+	$(".back-to-top")
+		.hide()
+		.click(function () {
+			$("html, body").animate({ scrollTop: 0 });
+
+		});
+
+
 
 
 
