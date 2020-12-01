@@ -12,8 +12,23 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js " rel="stylesheet">
+
         <title>AZ</title>
+
+
+
+		<link rel="apple-touch-icon" sizes="180x180" href="recources/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="recources/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="recources/favicons/favicon-16x16.png">
+		<link rel="manifest" href="recources/favicons/site.webmanifest">
+		<link rel="mask-icon" href="recources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="recources/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="recources/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
 
         <link rel="manifest" href="/resources/favicons/manifest.json">
         <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
@@ -30,6 +45,7 @@
 
     <body>
         <header>
+		<div class="water-effect">
             <nav class="js--nav-top">
                 <div class="row">
 					<a href="#">
@@ -37,16 +53,17 @@
                     <img src="resources/img/logo.png" alt="AZ logo" class="logo-black js--scroll-to-top"></a>
 
                     <ul class="main-nav js--main-nav">
-                        <li><a  href="#knowledge">Co umím</a></li>
-                        <li><a  href="#education">Vzdělání, praxe</a></li>
-                        <li><a  a href="#plans">Ostatní znalosti</a></li>
-                        <li><a  href="#about">About</a></li>
+                        <li><a class="menuLink" href="#knowledge">Co umím</a></li>
+                        <li><a class="menuLink"  href="#education">Vzdělání, praxe</a></li>
+                        <li><a  class="menuLink" href="#plans">Ostatní znalosti</a></li>
+                        <li><a class="menuLink" href="#about">About</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
                 </div>
-            </nav>
+			</nav>
+			</div>
             <div class="name">
-                <h1><a href="#" >Antonín Zejda</a><br>Životopis</h1>
+                <h1><a href="#" >Antonín Zejda</a><br><em>Životopis</em></h1>
                 <a class="btn btn-full js--scroll-to-section-knowledge" href="#knowledge" id="demo">Zajímá</a>
                 <a class="btn btn-ghost" href="#" id="nezajima">Nezajímá</a>
             </div>
@@ -69,7 +86,7 @@
                 <h2>Co ovládám, nebo se o to snažím</h2>
             </div>
             <div class="row js--wp-1">
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box boxTop">
                     <img src="resources/img/html.jpg" alt="html5">
                     <h3>HTML&amp;HTML5 </h3>
                     <div class="knowledge-box">
@@ -84,7 +101,7 @@
 				</div>
 
 
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box boxTop">
                     <img src="resources/img/sass.jpg" alt="css5">
                     <h3>Sass</h3>
                     <div class="knowledge-box">
@@ -100,7 +117,7 @@
 
 
 
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box boxTop">
                     <img src="resources/img/responsive.jpg" alt="responsive">
                     <h3>Responsive design</h3>
                     <div class="knowledge-box">
@@ -111,7 +128,7 @@
 				</div>
 
 
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box boxTop">
                     <img src="resources/img/js.png" alt="javascript">
                     <h3>Javascript</h3>
                     <div class="knowledge-box">
@@ -135,7 +152,7 @@
 
 			<section class="section-znalosti" id="znalosti">
             <div class="row js--wp-2">
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box boxTop">
                     <img src="resources/img/github.png" alt="jquery">
                     <h3>GitHub </h3>
                     <div class="knowledge-box">
@@ -144,7 +161,7 @@
                     </div>
 
                 </div>
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box boxTop">
                     <img src="resources/img/gimp.png" alt="gimp">
                     <h3>GIMP</h3>
                    <div class="knowledge-box">
@@ -153,7 +170,7 @@
                     </div>
 
                 </div>
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box boxTop">
                     <img src="resources/img/mysql.png" alt="mysql">
                     <h3>Databáze</h3>
                      <div class="knowledge-box">
@@ -163,7 +180,7 @@
                     </div>
 
                 </div>
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box boxTop">
                     <img src="resources/img/php.png" alt="php">
                     <h3>PHP</h3>
                     <div class="knowledge-box">

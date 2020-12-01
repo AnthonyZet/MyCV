@@ -2,6 +2,7 @@ $(document).ready(function () {
 
 
 
+
 	$("#nezajima").on("click", function () {
 		alert("Klikáte špatně");
 	});
@@ -54,6 +55,21 @@ $(document).ready(function () {
 			1000
 		);
 	});
+
+	$(".js--scroll-to-section-about").click(function () {
+		$("html, body").animate(
+			{ scrollTop: $(".js--section-about").offset().top },
+			1000
+		);
+	});
+
+	$(".js--scroll-to-top").click(function () {
+		$("html, body").animate(
+			{ scrollTop: 0},
+			1000
+		);
+	});
+
 
 
 
@@ -166,6 +182,10 @@ win.on("scroll", function () {
 
 		});
 
+		$(".water-effect").ripples({
+			resolution: 200,
+			perturbance: 0.04,
+		});
 
 
 

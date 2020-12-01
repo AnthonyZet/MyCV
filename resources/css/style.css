@@ -1,3 +1,4 @@
+/*     BACK-TO-TOP !important!       */
 
 /*
 Orange color: #e67e22
@@ -73,8 +74,8 @@ h3 {
 h1 {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #fff;
-  font-size: 240%;
+  color: rgb(255, 255, 255);
+  font-size: 340%;
   word-spacing: 4px;
   letter-spacing: 1px;
 }
@@ -163,19 +164,22 @@ strong {
 
 a:link,
 a:visited {
-  color: #e67e22;
+  color: #ffffff;
   text-decoration: none;
   padding-bottom: 1px;
+  outline: 0;
   /*
  border-bottom: 1px solid #e67e22;
   transition: border-bottom 0.2s, color 0.2s;
   */
 }
 
+
 a:hover,
 a:active {
   color: #555;
   border-bottom: 1px solid transparent;
+  outline: 0;
 }
 
 /* ------------------------------------------------ */
@@ -183,7 +187,9 @@ a:active {
 /* ----- BUTTONS ----- */
 
 /* -------------------------------------------------*/
-
+.btn-ghost{
+	cursor: not-allowed;
+}
 
 .btn:link,
 .btn:visited,
@@ -193,7 +199,8 @@ input[type=submit] {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: all .2s;
+	position: relative;
 }
 
 .btn-full:link,
@@ -205,29 +212,44 @@ input[type=submit] {
   margin-right: 15px;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
-  border: 1px solid #e67e22;
-  color: #e67e22;
-}
+
 
 .btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-  background-color: #cf6d17;
+.btn:active
+{
+transform: translateY(-3px);
+	background-color: rgb(240, 163, 38);
+	color: rgb(255, 255, 255);
+
 }
 
-.btn-full:hover,
-.btn-full:active {
-  border: 1px solid #cf6d17;
+
+.btn::after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius:  100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:  -1;
+	transition:  all .6s;
+outline: 0;
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
-  border: 1px solid #cf6d17;
-  color: #fff;
+.btn::after{
+	background-color: rgba(246, 230, 0, 0.746);
 }
+
+.btn:hover::after {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+
+
+
+
 
 /* ----------------------------------------------- */
 
@@ -246,16 +268,60 @@ header {
 
 .name {
   position: absolute;
-  width: 1140px;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	left:50%;
+	transform:  translate(-50%, -50%);
+	text-align: center;
+	background-color: rgba(71, 71, 71, 0.274);
+	padding: 20px;
+	border: 0.1px solid  #17adda1c;
+	border-radius: 0 70px 0 70px ;
+	backface-visibility: hidden;
 }
 
 .name h1 {
 	margin-bottom: 50px;
-	line-height: 70px;
+	line-height: 70px; animation: moveInLeft 1s ease-out;
 }
+
+.name h1 a{
+	color: #e67e22;
+animation: moveInLeft 1s ease-out;
+}
+
+.name a{
+animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	80%{
+		transform: translateX(20px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	80%{
+		transform: translateX(-20px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+
 
 /*
 
@@ -296,6 +362,7 @@ LOGO
 	margin-left: 40px;
 	margin-bottom: 10px;
 	font-weight: 400;
+
 }
 
 .main-nav li a:link,
@@ -305,14 +372,17 @@ LOGO
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s;
+	transition: 0.7s ease;
+	border-top: 12px solid #e67d2200;
+  border-bottom: 12px solid #e67d2200;
+
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #e67e22;
+    border-top: 4px solid #e67e22;
+  border-bottom: 4px solid #e67e22;
+  padding: 6px 0;
 }
 
 
@@ -424,6 +494,9 @@ Mobile navi
 /*
 .box{border: 1px solid red;}
 */
+.boxTop{
+height: 300px;
+}
 
 .box img {
   width: 100%;
@@ -431,8 +504,15 @@ Mobile navi
   margin-bottom: 15px;
 }
 
-.knowledge-box {
-  margin-bottom: 5px;
+
+
+.boxTop:hover {
+background-color: #f0ece8be;
+
+-webkit-box-shadow: 5px 5px 15px 5px #000000;
+box-shadow: 5px 5px 15px 5px #000000;
+transition: 0.7s ease;
+cursor: crosshair;
 }
 
 .section-knowledge {
@@ -478,16 +558,23 @@ blockquote:before {
 }
 
 .plan-box {
+min-height: 300px;
   background-color: #fff;
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
   box-shadow: 0 5px 5px #b5b0ab;
 }
-
+.plan-box:hover{
+	cursor: pointer;
+	transition: 1s ease;
+	background-color: rgba(129, 129, 129, 0.02);
+	-webkit-box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 0px -10px, rgb(255, 255, 255) 20px 0px 0px -10px, rgb(255, 255, 255) -20px 0px 0px -10px, rgb(161, 161, 161) 0px 0px 0px 10px, 5px 5px 15px 5px rgba(197,179,255,0);
+box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 0px -10px, rgb(255, 255, 255) 20px 0px 0px -10px, rgb(255, 255, 255) -20px 0px 0px -10px, rgb(49, 49, 49) 0px 0px 0px 10px, 5px 5px 15px 5px rgba(197,179,255,0);
+}
 .plan-box div {
   padding: 15px;
-  border-bottom: 1px solid #d8d3d3;
+
 }
 
 .plan-box div:first-child {
@@ -524,6 +611,7 @@ blockquote:before {
 /* ----------------------------------------------- */
 
 	.about-box{
+		height: 330px;
 		padding: 30px;
 		margin-bottom: 100px;
 		border-radius: 10px;
@@ -536,6 +624,7 @@ blockquote:before {
 
 		opacity:1.0;
 		transition: 1s ease;
+		background-color: rgba(128, 133, 131, 0.219);
 		-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.89);
 		box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.89);
 }
@@ -646,7 +735,7 @@ BACK TO TOP
 .back-to-top {
 	text-decoration: none;
 	font-size: 400%;
-	color: orange;
+	color: orange !important;
 	position: fixed;
 	bottom: 5px;
 	right: 4%;
