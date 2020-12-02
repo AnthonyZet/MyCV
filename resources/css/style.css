@@ -1,8 +1,11 @@
-/*     BACK-TO-TOP !important!       */
 
-/*
-Orange color: #e67e22
+/* eRRoR!!!
+Sticky MENU 790 px a nižší. OTEVŘU ZAVŘU zvětším obrazovku a menu UMŘE &#&#@Đ]!!!!!
 */
+
+/*     BACK-TO-TOP je dána hodnota !important!       */
+
+
 
 /* ----------------------------------------------- */
 /* BASIC SETUP */
@@ -398,11 +401,10 @@ Mobile navi
     display: none;
 }
 
-.mobile-nav-icon i{
+.mobile-nav-icon ion-icon{
     font-size: 300%;
     color: #fff;
 }
-
 
 
 
@@ -434,6 +436,7 @@ Mobile navi
 .sticky .logo { display: none; }
 .sticky .logo-black { display: block; }
 
+.sticky .mobile-nav-icon ion-icon {color: blue;}
 
 /* ----------------------------------------------- */
 
@@ -641,7 +644,73 @@ transition: 1s ease;
 	}
 
 
+	/* ----------------------------------------------- */
 
+/* GALLERY */
+
+/* ----------------------------------------------- */
+
+
+
+
+
+.images-wrapper {
+  width:100%;
+  text-align:center;
+  margin: 1em 0 0;
+
+}
+
+.slider-img {
+  width:50%;
+  height: 27em;
+  display:none;
+  margin:auto;
+  border-radius:.3em;
+  position:relative;
+}
+
+.bullet-list {
+  margin:0;
+  list-style-type:none;
+  text-align:center;
+}
+
+.bullets {
+  display:inline-block;
+  text-align:center;
+  vertical-align:top;
+  cursor:pointer;
+}
+
+.outer-circle {
+  width:2em;
+  height:2em;
+  background-color:rgb(60, 113, 182);
+  border-radius:50%;
+  position:relative;
+  margin:1em .5em;
+  text-align:center;
+}
+ul span {
+  position:absolute;
+  top:50%;
+  left:0;
+  right:0;
+  margin:auto;
+  transform:translateY(-50%);
+  display:block;
+  width:2em;
+  height:2em;
+  background-color:#000;
+  border-radius:50%;
+  opacity:0;
+  transition:all .5s;
+}
+
+.bullets.selected span {
+  opacity : .7
+;}
 /* ----------------------------------------------- */
 
 /* FOOTER */

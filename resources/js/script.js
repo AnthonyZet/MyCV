@@ -182,59 +182,38 @@ win.on("scroll", function () {
 
 		});
 
-		$(".water-effect").ripples({
-			resolution: 200,
-			perturbance: 0.04,
+		/* GOOGLE MENU */
+		/*
+	$('.js--nav-icon').click(function() {
+       var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon ion-icon');
+
+       if (icon.attr("name") == "menu-outline") {
+					icon.attr("name", "close-circle-outline");
+				} else {
+					icon.attr("name", "menu-outline");
+				}
+				 nav.slideToggle(200);
+    });
+*/
+	$(".js--nav-icon").click(function () {
+		var nav = $(".js--main-nav");
+		var icon = $(".js--nav-icon ion-icon");
+		icon.attr("name", function (index, attribute) {
+			return attribute == "menu-outline" ? "close-outline" : "menu-outline";
 		});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*
-	 * BACK TO TOP
-
-	var backToTop = $("<a>", {
-		href: "#",
-		class: "back-to-top",
-		html: '<ion-icon name="caret-up-circle-outline"></ion-icon>',
+		nav.slideToggle(200);
 	});
 
-	backToTop
-		.hide()
-		.appendTo("body")
-		.on("click", function () {
-			$("body").animate({ scrollTop: 0 });
-		});
 
-	var win = $(window);
-	win.on("scroll", function () {
-		if (win.scrollTop() >= 500) backToTop.fadeIn();
-		else backToTop.hide();
-	});
-*/
-
-
-	/*	$("html,body").animate({ scrollTop: $(this.hash).offset().top }, 1000); */
-
-
-	/*
-var waypoints = $('#handler-first').waypoint(function(direction) {
-  notify(this.element.id + ' hit 25% from top of window')
-}, {
-  offset: '25%'
-})
-*/
+/* GALLERY */
+var currIndex;
+$(".slider-img:first").fadeIn();
+$(".bullets").click(function () {
+	$(".bullets").removeClass("selected");
+	$(this).addClass("selected");
+	currIndex = $(this).index() + 1;
+	$(".slider-img").fadeOut(0);
+	$(".slider-img:nth-child(" + currIndex + ")").fadeIn();
+});
