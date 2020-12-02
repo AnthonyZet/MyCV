@@ -609,7 +609,7 @@ box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 
 
 /* ----------------------------------------------- */
 
-/* FOOTER */
+/* ABOUT */
 
 /* ----------------------------------------------- */
 
@@ -668,6 +668,17 @@ transition: 1s ease;
   margin:auto;
   border-radius:.3em;
   position:relative;
+-webkit-box-shadow: rgb(255, 128, 128) 5px 5px 15px 5px, rgb(255, 228, 136) -9px 5px 15px 5px, rgb(140, 255, 133) -7px -5px 15px 5px, rgb(128, 199, 255) 12px -5px 15px 5px, rgb(228, 136, 255) 12px 10px 15px 7px, rgb(255, 97, 107) -10px 10px 15px 7px, rgb(142, 92, 255) -10px -7px 27px 1px, 5px 5px 15px 5px rgba(0,0,0,0);
+box-shadow: rgb(255, 128, 128) 5px 5px 15px 5px, rgb(255, 228, 136) -9px 5px 15px 5px, rgb(140, 255, 133) -7px -5px 15px 5px, rgb(128, 199, 255) 12px -5px 15px 5px, rgb(228, 136, 255) 12px 10px 15px 7px, rgb(255, 97, 107) -10px 10px 15px 7px, rgb(142, 92, 255) -10px -7px 27px 1px, 5px 5px 15px 5px rgba(0,0,0,0);
+
+
+}
+
+.slider-img:hover{
+
+		transition: 1s ease;
+	-webkit-box-shadow: rgb(255, 255, 255) 0px -1px 4px, rgb(255, 255, 0) 0px -2px 10px, rgb(255, 128, 0) 0px -10px 20px, red 0px -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+	box-shadow: rgb(255, 255, 255) 0px -1px 4px, rgb(255, 255, 0) 0px -2px 10px, rgb(255, 128, 0) 0px -10px 20px, red 0px -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .bullet-list {
@@ -683,6 +694,7 @@ transition: 1s ease;
   cursor:pointer;
 }
 
+
 .outer-circle {
   width:2em;
   height:2em;
@@ -692,6 +704,10 @@ transition: 1s ease;
   margin:1em .5em;
   text-align:center;
 }
+.outer-circle:hover{
+background-color: rgb(111, 170, 246);
+}
+
 ul span {
   position:absolute;
   top:50%;
@@ -709,8 +725,11 @@ ul span {
 }
 
 .bullets.selected span {
-  opacity : .7
-;}
+  opacity : .7;
+}
+
+
+
 /* ----------------------------------------------- */
 
 /* FOOTER */
