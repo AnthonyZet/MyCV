@@ -12,7 +12,10 @@
 	 .icon-small {
 
         margin-right: 1px;
-    }
+	}
+		.slider-img{
+	width: 70%;
+}
 }
 
 @media only screen and (max-width: 1023px) {
@@ -38,6 +41,9 @@ section{ padding: 60px 0px; }
 
 	.section-knowledge { font-size: 90%; }
 	.contact-form { width: 80%; }
+
+
+
 
 }
 

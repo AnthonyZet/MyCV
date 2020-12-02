@@ -662,8 +662,8 @@ transition: 1s ease;
 }
 
 .slider-img {
-  width:50%;
-  height: 27em;
+  width: 900px;
+  max-height: 27em;
   display:none;
   margin:auto;
   border-radius:.3em;
