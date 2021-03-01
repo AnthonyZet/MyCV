@@ -140,6 +140,17 @@ strong {
 	color: yellowgreen;
 }
 
+.h3_about{
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+.p_about{
+margin-bottom: 5px;
+}
+
+
+
 /*-------------------------------------------------*/
 
 /* ----- PARAGRAPHS ----- */
@@ -484,6 +495,7 @@ Mobile navi
 /* ----------------------------------------------- */
 .section-ostatni {
   padding: 0;
+  margin-top: 70px;
 }
 
 .ostatni-showcase {
@@ -564,6 +576,40 @@ cursor: crosshair;
   background-attachment: fixed;
 }
 
+h3 blockquote{
+  
+  position: relative;
+	padding-left: 30px;
+	font-weight: 900;
+	
+	padding: 1em;
+	margin: 1em;
+	max-width: 33em;
+	font-size: 24px;
+	&:before {
+		content: "“";
+		font-family: serif;
+		position: absolute;
+		right: 100%;
+		font-size: 120px;
+		line-height: 0px;
+		top: 50px;
+		color: #78e08f;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 100%;
+		width: 80px;
+		height: 5px;
+		background: #e56d39;
+		left: 1em;
+}
+
+
+}
+
 blockquote {
   padding: 2%;
   font-style: italic;
@@ -580,6 +626,9 @@ blockquote:before {
   top: -5px;
   left: -5px;
 }
+
+
+
 
 
 
@@ -644,7 +693,7 @@ box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 
 /* ----------------------------------------------- */
 
 	.about-box{
-		height: 330px;
+		height: 450px;
 		padding: 30px;
 		margin-bottom: 100px;
 		border-radius: 10px;
