@@ -26,8 +26,16 @@ LANGUAGE SWITCH
   font-size: 25px;
 z-index: 19999;
 position: fixed;
-line-height: 160px;
+margin-top: 60px;
+background-color: #fff;
+border: 0.5rem outset rgb(65, 153, 236);
 
+
+border-radius: 12px;
+font: bold 1rem sans-serif;
+
+
+outline-offset: 0.3rem;
 }
 
 
@@ -586,26 +594,7 @@ h3 blockquote{
 	margin: 1em;
 	max-width: 33em;
 	font-size: 24px;
-	&:before {
-		content: "“";
-		font-family: serif;
-		position: absolute;
-		right: 100%;
-		font-size: 120px;
-		line-height: 0px;
-		top: 50px;
-		color: #78e08f;
-	}
-	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		top: 100%;
-		width: 80px;
-		height: 5px;
-		background: #e56d39;
-		left: 1em;
-}
+
 
 
 }
@@ -693,7 +682,7 @@ box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 
 /* ----------------------------------------------- */
 
 	.about-box{
-		height: 450px;
+		height: 520px;
 		padding: 30px;
 		margin-bottom: 100px;
 		border-radius: 10px;
