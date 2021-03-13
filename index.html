@@ -1,241 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-		<link rel="shortcut icon" type="image/png" href="resources/favicons/favicon-32x32.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js " rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="shortcut icon" type="image/png" href="resources/favicons/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js " rel="stylesheet">
 
-        <title>AZ</title>
+    <title>AZ</title>
 
 
-    </head>
+</head>
 
 <!--
 	HEADER
 -->
 
-    <body>
-        <header>
-		<div class="water-effect">
-            <nav class="js--nav-top">
-                <div class="row">
-					<a href="#">
-					  <img src="resources/img/logo-white.png" alt="AZ logo" class="logo">
-					<img src="resources/img/logo.png" alt="AZ logo" class="logo-black js--scroll-to-top">
-				</a>
+<body class="lang1">
+    <header>
 
-                    <ul class="main-nav js--main-nav">
-                        <li><a class="menuLink" href="#knowledge">Co umím</a></li>
-                        <li><a class="menuLink"  href="#education">Vzdělání, praxe</a></li>
-                        <li><a  class="menuLink" href="#plans">Ostatní znalosti</a></li>
-                        <li><a class="menuLink" href="#about">About</a></li>
-					</ul>
 
-                  		  <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
+        <span class="lang_switch">
+            <a class="left-top-font" onclick="set_lang('lang1')" href="#ln1" style="color:red">Česky</a> |
+            <a class="left-top-font" onclick="set_lang('lang2')" href="#ln2" style="color:red">English</a> |
+            <a class="left-top-font" onclick="set_lang('lang3')" href="#ln3" style="color:red">Deutsch</a>
 
-				</div>
-			</nav>
-			</div>
-            <div class="name">
-                <h1><a href="#" >Antonín Zejda</a><br><em>Životopis</em></h1>
+        </span>
+
+
+
+        <nav class="js--nav-top">
+            <div class="row">
+                <a href="#">
+                    <img src="resources/img/logo-white.png" alt="AZ logo" class="logo">
+                    <img src="resources/img/logo.png" alt="AZ logo" class="logo-black js--scroll-to-top">
+                </a>
+
+                <ul class="main-nav js--main-nav ln1">
+                    <li><a class="menuLink" href="#knowledge">Co umím</a></li>
+                    <li><a class="menuLink" href="#education">Vzdělání, praxe</a></li>
+                    <li><a class="menuLink" href="#plans">Ostatní znalosti</a></li>
+                    <li><a class="menuLink" href="#about">About</a></li>
+                </ul>
+
+                <ul class="main-nav js--main-nav ln2">
+                    <li><a class="menuLink" href="#knowledge-en">Skills</a></li>
+                    <li><a class="menuLink" href="#education-en">Education</a></li>
+                    <li><a class="menuLink" href="#plans-en">Another knowledge</a></li>
+                    <li><a class="menuLink" href="#about-en">About</a></li>
+                </ul>
+
+                <ul class="main-nav js--main-nav ln3">
+                    <li><a class="menuLink" href="#knowledge-de">Fähigkeiten</a></li>
+                    <li><a class="menuLink" href="#education-de">Ausbildung</a></li>
+                    <li><a class="menuLink" href="#plans-de">Andere Kenntnisse</a></li>
+                    <li><a class="menuLink" href="#about-de">About</a></li>
+                </ul>
+
+
+
+
+                <a class="mobile-nav-icon js--nav-icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </a>
+
+            </div>
+        </nav>
+
+        <div class="name">
+            <h1><a href="#">Antonín Zejda</a><br><em>Curriculum vitae</em></h1>
+
+            <div class="ln1">
                 <a class="btn btn-full js--scroll-to-section-knowledge" href="#knowledge" id="demo">Zajímá</a>
                 <a class="btn btn-ghost" href="#" id="nezajima">Nezajímá</a>
             </div>
 
-		</header>
+            <div class="ln2">
+                <a class="btn btn-full js--scroll-to-section-knowledge-en" href="#knowledge-en" id="demo">Show me</a>
+                <a class="btn btn-ghost" href="#" id="nezajima">Don´t care</a>
+            </div>
+
+            <div class="ln3">
+                <a class="btn btn-full js--scroll-to-section-knowledge-de" href="#knowledge-de" id="demo">Schau mir</a>
+                <a class="btn btn-ghost" href="#" id="nezajima">Egal</a>
+            </div>
+        </div>
+
+    </header>
 
 
-<!-- ---------------------------------------------------------------
+    <!-- ---------------------------------------------------------------
 
 	ZNALOSTI
 
  ------------------------------------------------------------------>
 
-<!----------------------
-	1
+    <!----------------------
+	1 ROW
 --------------------------->
 
-		<section class="section-knowledge js--section-knowledge" id="knowledge">
-            <div class="row">
-                <h2>Co ovládám, nebo se o to snažím</h2>
+    <section class="section-knowledge js--section-knowledge ln1" id="knowledge">
+        <div class="row">
+            <h2>Co ovládám, nebo se o to snažím</h2>
+        </div>
+        <div class="row js--wp-1">
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/html.jpg" alt="html5">
+                <h3>HTML&amp;HTML5 </h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mírně pokročilý
+                </div>
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    Flex; Fluid Grid
+                </div>
+
             </div>
-            <div class="row js--wp-1">
-                <div class="col span-1-of-4 box boxTop">
-                    <img src="resources/img/html.jpg" alt="html5">
-                    <h3>HTML&amp;HTML5 </h3>
-                    <div class="knowledge-box">
-                        <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
-                        Mírně pokročilý
-                    </div>
-                    <div class="knowledge-box">
-                        <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
-                        Flex; Fluid Grid
-                    </div>
-
-				</div>
 
 
-                <div class="col span-1-of-4 box boxTop">
-                    <img src="resources/img/sass.jpg" alt="css5">
-                    <h3>Sass</h3>
-                    <div class="knowledge-box">
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/sass.jpg" alt="css5">
+                <h3>Sass</h3>
+                <div class="knowledge-box">
 
-                     <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
-                       Mírně pokročilý
-                    </div>
-                    <div class="knowledge-box">
-                      <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
-                        Mixins, @import...
-                    </div>
-				</div>
-
-
-
-                <div class="col span-1-of-4 box boxTop">
-                    <img src="resources/img/responsive.jpg" alt="responsive">
-                    <h3>Responsive design</h3>
-                    <div class="knowledge-box">
-                     <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
-                        Mírně pokročilý
-                    </div>
-
-				</div>
-
-
-                <div class="col span-1-of-4 box boxTop">
-                    <img src="resources/img/js.png" alt="javascript">
-                    <h3>Javascript</h3>
-                    <div class="knowledge-box">
-                          	<ion-icon name="construct-outline" class="icon-small"></ion-icon>
-                        Začátečník
-                    </div>
-
-					<div class="knowledge-box">
-                        <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
-                       jQuery
-					</div>
-
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mírně pokročilý
+                </div>
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    Mixins, @import...
                 </div>
             </div>
 
-		</section>
 
-		<!-----------------------
-	2
+
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/responsive.jpg" alt="responsive">
+                <h3>Responsive design</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mírně pokročilý
+                </div>
+
+            </div>
+
+
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/js.png" alt="javascript">
+                <h3>Javascript</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Mírně pokročilý
+                </div>
+
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    jQuery
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--
+          SECTION ROW 1  English
+        -->
+
+    <section class="section-knowledge js--section-knowledge  ln2" id="knowledge-en">
+        <div class="row">
+            <h2>What I know or I try</h2>
+        </div>
+        <div class="row js--wp-1">
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/html.jpg" alt="html5">
+                <h3>HTML&amp;HTML5 </h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Pre-intermediete
+                </div>
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    Flex; Fluid Grid
+                </div>
+
+            </div>
+
+
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/sass.jpg" alt="css5">
+                <h3>Sass</h3>
+                <div class="knowledge-box">
+
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Pre-intermediate
+                </div>
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    Mixins, @import...
+                </div>
+            </div>
+
+
+
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/responsive.jpg" alt="responsive">
+                <h3>Responsive design</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Pre-intermediate
+                </div>
+
+            </div>
+
+
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/js.png" alt="javascript">
+                <h3>Javascript</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Pre-intermediate
+                </div>
+
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    jQuery
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--
+          SECTION ROW 2  Deutsch
+        -->
+
+    <section class="section-knowledge  js--section-knowledge ln3" id="knowledge-de">
+        <div class="row">
+            <h2>Was ich kenne, oder ich versuche</h2>
+        </div>
+        <div class="row js--wp-1">
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/html.jpg" alt="html5">
+                <h3>HTML&amp;HTML5 </h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mäßig fortgeschrittene
+                </div>
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    Flex; Fluid Grid
+                </div>
+
+            </div>
+
+
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/sass.jpg" alt="css5">
+                <h3>Sass</h3>
+                <div class="knowledge-box">
+
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mäßig fortgeschrittene
+                </div>
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    Mixins, @import...
+                </div>
+            </div>
+
+
+
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/responsive.jpg" alt="responsive">
+                <h3>Responsive design</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mäßig fortgeschrittene
+                </div>
+
+            </div>
+
+
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/js.png" alt="javascript">
+                <h3>Javascript</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Mäßig fortgeschrittene
+                </div>
+
+                <div class="knowledge-box">
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    jQuery
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-----------------------
+	2 ROW
 ----------------------------------->
 
-			<section class="section-znalosti" id="znalosti">
-            <div class="row js--wp-2">
-                <div class="col span-1-of-4 box boxTop">
-                    <img src="resources/img/github.png" alt="jquery">
-                    <h3>GitHub </h3>
-                    <div class="knowledge-box">
-                         	<ion-icon name="construct-outline" class="icon-small"></ion-icon>
-                       Začátečník
-                    </div>
-
+    <section class="section-znalosti ln1" id="znalosti">
+        <div class="row js--wp-2">
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/github.png" alt="jquery">
+                <h3>GitHub </h3>
+                <div class="knowledge-box">
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Mírně pokročilý
                 </div>
-                <div class="col span-1-of-4 box boxTop">
-                    <img src="resources/img/gimp.png" alt="gimp">
-                    <h3>GIMP</h3>
-                   <div class="knowledge-box">
-                       <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
-                       Mírně pokročilý
-                    </div>
 
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/gimp.png" alt="gimp">
+                <h3>GIMP</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mírně pokročilý
                 </div>
-                <div class="col span-1-of-4 box boxTop">
-                    <img src="resources/img/mysql.png" alt="mysql">
-                    <h3>Databáze</h3>
-                     <div class="knowledge-box">
 
-                       	<ion-icon name="construct-outline" class="icon-small"></ion-icon>
-                        Začátečník
-                    </div>
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/mysql.png" alt="mysql">
+                <h3>Databáze</h3>
+                <div class="knowledge-box">
 
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Začátečník
                 </div>
-                <div class="col span-1-of-4 box boxTop">
-                    <img src="resources/img/php.png" alt="php">
-                    <h3>PHP</h3>
-                    <div class="knowledge-box">
-                       <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
-                        Mírně pokročilý?
-                    </div>
-                     <div class="knowledge-box">
 
-                       <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
-                       OOP, json, Loops
-                    </div>
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/php.png" alt="php">
+                <h3>PHP</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mírně pokročilý
+                </div>
+                <div class="knowledge-box">
+
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    OOP, json, Loops
                 </div>
             </div>
+        </div>
 
-		</section>
+    </section>
 
-<!-- --------------------------------------------------------
+    <!--
+          SECTION ROW 2  English
+        -->
+
+    <section class="section-znalosti ln2" id="znalosti">
+        <div class="row js--wp-2">
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/github.png" alt="jquery">
+                <h3>GitHub </h3>
+                <div class="knowledge-box">
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Pre-intermediate
+                </div>
+
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/gimp.png" alt="gimp">
+                <h3>GIMP</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Pre-intermediate
+                </div>
+
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/mysql.png" alt="mysql">
+                <h3>Databáze</h3>
+                <div class="knowledge-box">
+
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Beginner
+                </div>
+
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/php.png" alt="php">
+                <h3>PHP</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Pre-intermediate
+                </div>
+                <div class="knowledge-box">
+
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    OOP, json, Loops
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--
+          SECTION ROW 2  Deutsch
+        -->
+
+    <section class="section-znalosti ln3" id="znalosti">
+        <div class="row js--wp-2">
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/github.png" alt="jquery">
+                <h3>GitHub </h3>
+                <div class="knowledge-box">
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Mäßig fortgeschrittene
+                </div>
+
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/gimp.png" alt="gimp">
+                <h3>GIMP</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mäßig fortgeschrittene
+                </div>
+
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/mysql.png" alt="mysql">
+                <h3>Databáze</h3>
+                <div class="knowledge-box">
+
+                    <ion-icon name="construct-outline" class="icon-small"></ion-icon>
+                    Anfänger
+                </div>
+
+            </div>
+            <div class="col span-1-of-4 box boxTop">
+                <img src="resources/img/php.png" alt="php">
+                <h3>PHP</h3>
+                <div class="knowledge-box">
+                    <ion-icon name="ribbon-outline" class="icon-small"></ion-icon>
+                    Mäßig fortgeschrittene
+                </div>
+                <div class="knowledge-box">
+
+                    <ion-icon name="chevron-forward-outline" class="icon-small"></ion-icon>
+                    OOP, json, Loops
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- --------------------------------------------------------
 
 EDUCATION
 
 ----------------------------------------------------------- -->
 
-
-			<section class="section-education  js--section-education " id="education">
-			<div class="js--wp-3">
-            <div class="row">
-                <h2>Nejvyšší dosažené vzdělání & praxe</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <blockquote>
-                       2013-2015	<br>
-						Škola ekonomiky a cestovního ruchu Rantířovská 9 Jihlava <br>
-						Podnikatelství malých firem <br>
-						<strong>Maturitní zkouška </strong><br>
-
-                    </blockquote>
+    <div class="ln1">
+        <section class="section-education  js--section-education" id="education">
+            <div class="js--wp-3">
+                <div class="row">
+                    <h2>Nejvyšší dosažené vzdělání & praxe</h2>
                 </div>
-                <div class="col span-1-of-3">
-                    <blockquote>
-					<strong>  Profesionální svářeč Freelancer</strong><br>
-					  Německo <br>
-					  5 let
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            2013-2015 <br>
+                            Škola ekonomiky a cestovního ruchu Rantířovská 9 Jihlava <br>
+                            Podnikatelství malých firem <br>
+                            <strong>Maturitní zkouška </strong><br>
 
-                    </blockquote>
-			</div>
+                        </blockquote>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            <strong>Freelancer Německo</strong><br>
+                            Svářeč<br>
+                            Vedoucí skupin<br>
+                            Zástupce projectmanagera<br>
 
+                            5 let
 
-                <div class="col span-1-of-3">
-                    <blockquote>
-					 <strong> Předchozí zaměstnání </strong> <br>
-					  Instalatér závlahových systémů <br>
-					  Specialista, prodejce elektro. zboží <br>
-					  Rekonstrukce bytových jader<br>
-					  Skladník aj...
-
-
-
-
-						</blockquote>
-				</div>
-	</div>
-</div>
+                        </blockquote>
+                    </div>
 
 
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            <strong> Předchozí zaměstnání </strong> <br>
+                            Specialista, prodejce elektro. zboží <br>
+                            Rekonstrukce bytových jader<br>
+                            Instalatér závlahových systémů <br>
+                            Skladník aj...
 
-		</section>
 
 
-<!-- --------------------------------------------------------
+
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </div>
+    <!-- --------------------------------------------------------
+
+EDUCATION
+ENGLISH
+
+----------------------------------------------------------- -->
+    <div class="ln2">
+        <section class="section-education  js--section-education" id="education-en">
+            <div class="js--wp-3">
+                <div class="row">
+                    <h2>Education & Skill highlights</h2>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            2013-2015 <br>
+                            Highschool of economics and tourism Rantířovská 9 Jihlava <br>
+                            Business of small companies<br>
+                            <strong>Graduation </strong><br>
+
+                        </blockquote>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            <strong> Freelancer Germany </strong><br>
+                            Welder<br>
+                            Leader of groups<br>
+                            Project manager´s representative
+                            5 years
+
+                        </blockquote>
+                    </div>
+
+
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            <strong> Work experience </strong> <br>
+                            Specialist&shop assistant of elektronics <br>
+                            Reconstruction of apartment cores<br>
+                            Irrigation sprinkler system installer <br>
+                            Reconstruction of apartment cores<br>
+                            Storekeeper etc...
+
+
+
+
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </div>
+
+    <!-- --------------------------------------------------------
+
+EDUCATION
+DEUTSCH
+
+----------------------------------------------------------- -->
+    <div class="ln3">
+        <section class="section-education  js--section-education" id="education-de">
+            <div class="js--wp-3">
+                <div class="row">
+                    <h2>Ausbildung</h2>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            2013-2015 <br>
+
+                            Schule für Wirtschaft und Tourismus Rantířovská 9 Jihlava<br>
+                            <strong>Abitur</strong><br>
+
+                        </blockquote>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            <strong> Freiberufler Unternehmer </strong><br>
+                            Schweißer <br>
+                            Gruppenführer<br>
+                            Stellvertretender Bauleiter<br>
+                            5 Jahre
+
+                        </blockquote>
+                    </div>
+
+
+                    <div class="col span-1-of-3">
+                        <blockquote>
+                            <strong> Berufliche Erfahrungen</strong> <br>
+                            Installateur für Bewässerungssysteme <br>
+                            Spezialist für Elektronikvertrieb <br>
+                            Rekonstruktion von Apartmentkernen<br>
+                            Lagermeister aj...
+
+
+
+
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+    </div>
+
+    <!-- --------------------------------------------------------
 
 OSTATNÍ DOVEDNOSTI
 
@@ -245,205 +646,1582 @@ OSTATNÍ DOVEDNOSTI
 
 
 
+    <div class="ln1">
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row js--wp-4">
 
-		<section class="section-plans js--section-plans" id="plans">
-			 <div class="row js--wp-4">
-			 <div class="row">
-                <h2>Ostatní dovednosti, kurzy atp.</h2>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Jazykové dovednosti:</h3>
+
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="trophy-outline"></ion-icon><strong>Anglický jazyk B2</strong>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>Pokročilý
+                                    </li>
+                                    <li>
+                                        <ion-icon name="trophy-outline"></ion-icon><strong>Německý jazyk B2</strong>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>Pokročilý
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Hotové kurzy</h3>
+
+
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Build websites HTML3 & CSS3
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Advanced Css & Sass
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>WebRebel 1
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Css preprocesory: Sass
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Základy programování a OOP
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Git a GitHub základy
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Tailwind kurz
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Brzy dokončím</h3>
+
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>Complete Javascript 2021
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>Javascript a ES6
+                                    </li>
+                                    <li>
+
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>WebRebel 2: PHP
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+
+                            <div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col span-1-of-3">
+
+
+            <div class="row js--wp-4">
+                <div class="col span-3-of-3">
                     <div class="plan-box">
                         <div>
-							<h3>Jazykové dovednosti:</h3>
+                            <h3>Mám v plánu</h3>
 
                         </div>
+
                         <div>
                             <ul>
-                                <li><ion-icon name="trophy-outline"></ion-icon><strong>Anglický jazyk B2</strong></li>
-                                <li><ion-icon name="arrow-forward-outline"></ion-icon>Pokročilý</li>
-                                <li><ion-icon name="trophy-outline"></ion-icon><strong>Německý jazyk B1</strong></li>
-                                <li><ion-icon name="arrow-forward-outline"></ion-icon>Mírně pokročilý</li>
+
+                                <ion-icon name="help-outline"></ion-icon>Vue - The complete guide
+                                </li>
+                                <li>
+                                    <ion-icon name="help-outline"></ion-icon>React - The complete guide
+                                </li>
+                                <li>
+                                    <ion-icon name="help-outline"></ion-icon>React, Angular, Vue
+                                </li>
+                                <li>
+                                    <ion-icon name="help-outline"></ion-icon>WebRebel 2: PHP
+                                </li>
+                                <li>
+                                    <ion-icon name="help-outline"></ion-icon>WebRebel 3: OOP - Laravel
+                                </li>
+                                <li>
+                                    <ion-icon name="help-outline"></ion-icon>SQL databáze: MySQL a SQLite
+                                </li>
+
                             </ul>
                         </div>
+
                         <div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+    <!--
+        OSTATNÍ DOVEDNOSTI
+        ENGLISH
+    -->
+    <div class="ln2">
+        <section class="section-plans js--section-plans" id="plans-en">
+            <div class="row js--wp-4">
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Languages:</h3>
+
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="trophy-outline"></ion-icon><strong>English language B2</strong>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>Intermediate
+                                    </li>
+                                    <li>
+                                        <ion-icon name="trophy-outline"></ion-icon><strong>German language B2</strong>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>Intermediate
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Finished courses</h3>
+
+
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Build real websites HTML3 & CSS3
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Advanced Css & Sass
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>WebRebel 1
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Css preprocesory: Sass
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Základy programování a OOP
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Git a GitHub základy
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Tailwind kurs
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Finish soon</h3>
+
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>Complete Javascript 2021
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>Javascript a ES6
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>Vue - The complete guide
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>React - The complete guide
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>React, Angular, Vue
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>WebRebel 2: PHP
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>WebRebel 3: OOP - Laravel
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>SQL databáze: MySQL a SQLite
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+
+                            </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Hotové kurzy</h3>
+            </div>
+        </section>
+    </div>
+
+    <!--
+        OSTATNÍ DOVEDNOSTI
+        DEUTSCH
+-->
+    <div class="ln3">
+        <section class="section-plans js--section-plans" id="plans-de">
+
+            <div class="row js--wp-4">
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Sprachen:</h3>
+
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="trophy-outline"></ion-icon><strong>Englishe Sprache B2</strong>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>Fortgeschrittene
+                                    </li>
+                                    <li>
+                                        <ion-icon name="trophy-outline"></ion-icon><strong>Deutsche Sprache B2</strong>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>Fortgeschrittene
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Abgeschlossene Kurse</h3>
 
 
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Build real websites HTML3 & CSS3
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Advanced Css & Sass
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>WebRebel 1
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Css preprocesory: Sass
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Základy programování a OOP
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Git a GitHub základy
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-outline"></ion-icon>Tailwind kurs
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div>
+
+                            </div>
                         </div>
-                        <div>
-                            <ul>
-                                <li><ion-icon name="checkmark-outline"></ion-icon>WebRebel 1</li>
-                                <li><ion-icon name="checkmark-outline"></ion-icon>Css preprocesory: Sass</li>
-                                <li><ion-icon name="checkmark-outline"></ion-icon>Základy promování a OOP</li>
-                                <li><ion-icon name="checkmark-outline"></ion-icon>Git a GitHub základy</li>
-                            </ul>
-                        </div>
-                        <div>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="plan-box">
+                            <div>
+                                <h3>Bald fertig</h3>
+
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>Complete Javascript 2021
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>Javascript a ES6
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>Vue - The complete guide
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>React - The complete guide
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>React, Angular, Vue
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>WebRebel 2: PHP
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>WebRebel 3: OOP - Laravel
+                                    </li>
+                                    <li>
+                                        <ion-icon name="help-outline"></ion-icon>SQL databáze: MySQL a SQLite
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div>
+
+                            </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Navštěvované kurzy</h3>
 
-						</div>
+            </div>
+        </section>
+    </div>
 
-                        <div>
-                            <ul>
-                              	<li><ion-icon name="help-outline"></ion-icon>WebRebel 2 &amp; Laravel</li>
-                               	<li><ion-icon name="help-outline"></ion-icon>SQL databáze: MySQL a SQLite</li>
-								<li><ion-icon name="help-outline"></ion-icon>Wordpress pro uživatele</li>
-								<li><ion-icon name="help-outline"></ion-icon>Bootstrap pro začátečníky</li>
-								<li><ion-icon name="help-outline"></ion-icon>+ kurzy na Udemy</li>
-
-                            </ul>
-						</div>
-
-                        <div>
-
-						</div>
-
-                    </div>
-                </div>
-			</div>
-		</div>
-	</section>
-
-		<!--- -----------------------------------------------
+    <!--- -----------------------------------------------
 
 		GALERIE
 
 		--------------------------------------------------------->
 
-		  <section class="section-ostatni">
-            <ul class="ostatni-showcase clearfix">
-                <li>
-                    <figure class="ostatni-photo">
-                        <img src="resources/img/1.jpg" alt="svar1">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="ostatni-photo">
-                        <img src="resources/img/2.jpg" alt="svar2">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="ostatni-photo">
-                        <img src="resources/img/3.jpg" alt="svar3">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="ostatni-photo">
-                        <img src="resources/img/4.jpg" alt="svar4">
-                    </figure>
-                </li>
-            </ul>
-            <ul class="ostatni-showcase clearfix">
-                <li>
-                    <figure class="ostatni-photo">
-                        <img src="resources/img/5.jpg" alt="svar5">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="ostatni-photo">
-                        <img src="resources/img/6.jpg" alt="svar6">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="ostatni-photo">
-                        <img src="resources/img/7.jpg" alt="svar7">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="ostatni-photo">
-                        <img src="resources/img/8.jpg" alt="svar8">
-                    </figure>
-                </li>
-            </ul>
-        </section>
+    <section class="section-ostatni">
+        <ul class="ostatni-showcase clearfix">
+            <li>
+                <figure class="ostatni-photo">
+                    <img src="resources/img/1.jpg" alt="svar1">
+                </figure>
+            </li>
+            <li>
+                <figure class="ostatni-photo">
+                    <img src="resources/img/2.jpg" alt="svar2">
+                </figure>
+            </li>
+            <li>
+                <figure class="ostatni-photo">
+                    <img src="resources/img/3.jpg" alt="svar3">
+                </figure>
+            </li>
+            <li>
+                <figure class="ostatni-photo">
+                    <img src="resources/img/4.jpg" alt="svar4">
+                </figure>
+            </li>
+        </ul>
+        <ul class="ostatni-showcase clearfix">
+            <li>
+                <figure class="ostatni-photo">
+                    <img src="resources/img/5.jpg" alt="svar5">
+                </figure>
+            </li>
+            <li>
+                <figure class="ostatni-photo">
+                    <img src="resources/img/6.jpg" alt="svar6">
+                </figure>
+            </li>
+            <li>
+                <figure class="ostatni-photo">
+                    <img src="resources/img/7.jpg" alt="svar7">
+                </figure>
+            </li>
+            <li>
+                <figure class="ostatni-photo">
+                    <img src="resources/img/8.jpg" alt="svar8">
+                </figure>
+            </li>
+        </ul>
+    </section>
 
-<!------------------------------
+    <!------------------------------
 
-	ABOUT ME
+	ABOUT ME CZECH
 
 ------------------------------------>
-
-<section class="section-knowledge second js--section-about" id="about">
-
-
-				  <div class="row js--wp-5">
-
-						<div class="col span-1-of-2 box">
-							<div class="about-box">
-							<h2>O mně (krátce)</h2>
-							<ul>
-								<li>Věk: 31 let </li>
-								<li>8 Mezinárodích svářečských certifikací</li>
-								<li>Řičiský průkaz sk. B</li>
-								<li>Počet najetých km za loňský rok 100 000+</li>
-
-							</ul>
-						</div>
-					</div>
-
-						<div class="col span-1-of-2 box">
-							<div class="about-box">
-							<h2>Záliby</h2>
-							<ul>
-								<li>Moderní Technologie </li>
-								<li>Tvorba a design webových stránek</li>
-								<li>Úpravy fotek&amp;videí </li>
-								<li>Sport</li>
-								<li>Anglický a německý jazyk</li>
-
-							</ul>
-						</div>
-					 </div>
-				</div>
-
-</section>
+    <div class="ln1">
+        <section class="section-knowledge second js--section-about" id="about">
 
 
-<section class="section-ostatni">
-			<div class="images-wrapper">
-			<img src="resources/gallery/8.jpg" class="slider-img selected" alt="SliderImg" />
-			<img src="resources/gallery/7.jpg" class="slider-img" alt="SliderImg" />
-			<img src="resources/gallery/6.jpg" class="slider-img" alt="SliderImg" />
-			<img src="resources/gallery/4.jpg" class="slider-img" alt="SliderImg" />
-			<img src="resources/gallery/5.jpg" class="slider-img selected" alt="SliderImg" />
-			<img src="resources/gallery/3.jpg" class="slider-img" alt="SliderImg" />
-			<img src="resources/gallery/2.jpg" class="slider-img" alt="SliderImg" />
-			<img src="resources/gallery/1.jpg" class="slider-img" alt="SliderImg" />
-			</div>
+            <div class="row js--wp-5">
 
-			<ul class="bullet-list">
-			<li class="bullets selected"><div class="outer-circle"><span></span></div></li>
-			<li class="bullets"><div class="outer-circle"><span></span></div></li>
-			<li class="bullets"><div class="outer-circle"><span></span></div></li>
-			<li class="bullets"><div class="outer-circle"><span></span></div></li>
-			<li class="bullets"><div class="outer-circle"><span></span></div></li>
-			<li class="bullets"><div class="outer-circle"><span></span></div></li>
-			<li class="bullets"><div class="outer-circle"><span></span></div></li>
-			<li class="bullets"><div class="outer-circle"><span></span></div></li>
-			</ul>
+                <div class="col span-1-of-2 box">
+                    <div class="about-box">
+                        <h2>O mně (krátce)</h2>
+                        <ul>
+                            <li>Věk: 32 </li>
+                            <li>8 Mezinárodních svářečských certifikací nejvyšší úrovně</li>
+                            <li>Mezinárodní potrubářský kurz s atestací</li>
+                            <li>Řičiský průkaz sk. B</li>
+                            <li>Počet najetých km za loňský rok 100 000+</li>
+                            <li>Zkušenosti v zahraničí</li>
+                            <li>Svářeč</li>
+                            <li>Vedoucí skupin</li>
+                            <li>Zástupce projectmanagera</li>
+                            <li>Ovládání halového jeřábu</li>
+                            <li>Titulky pro Německý kanál MySpass - přidat odkazy</li>
 
- </section>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-2 box">
+                    <div class="about-box">
+                        <h2>Záliby</h2>
+                        <ul>
+                            <li>Tvorba a design webových stránek</li>
+                            <li>Svařování</li>
+                            <li>Anglický a německý jazyk</li>
+                            <li>Moderní technologie </li>
+                            <li>Úpravy fotek&amp;videí </li>
+                            <li>Sport</li>
+                            <li>a sebezdokonalování...</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row js--wp-5">
+                <div class="col span-3-of-3 box">
+                    <h2>Pokud rádi čtete</h2>
+                </div>
+            </div>
+
+            <div class="row js--wp-5">
+                <div class="col span-2-of-3 box">
+                    <h2>Zpátky na začátek?</h2>
+                    <p class="p_about">Zajímalo by mě, zda to někdo doscrolloval až sem.</p>
+                    <p class="p_about">Měl bych tu psát něco o motivaci a pozitivním myšlení a o tom jak jsem ten
+                        nejlepší a
+                        povahově nejdokonalejší kandidát pro potentionálního zaměstnavatele.
+                    </p>
+
+                    <p class="p_about">Jenže já ani nevím jestli spadám do obecné kategorie normálnosti. Spíš ne.</p>
+
+                    <h3 class="h3_about">Život si můžete plánovat jak chcete...</h3>
+
+                    <p>Kódit a programovat jsem se chtěl naučit už před více jak 6ti lety.
+                        A nejenom chtěl, já se tomu věnoval. Chodil jsem do práce, která mě nebavila, bydlel s tátou a
+                        měl
+                        "jasnej plán:"
+                        <br> <strong>budu programátor.</strong><br>
+                    </p>
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h2>Proč</h2>
+
+                    <p>Proč bych opouštěl slibně rozjetou kariéru a vrátil se zpátky na začátek?
+                    </p>
+
+                    <p class="p_about">
+                        Kariéra a peníze jsou jedna věc, ale se vidím v IT.
+                    </p>
+
+                    <p class="p_about">
+                    <blockquote> Chci se posouvat, mít možnost vědět a umět víc. IT je budoucnost a já chci být její
+                        součastí...
+                        </p>
+
+
+                        <p>i za cenu, že se vzdám práce za 5000€ měsíčně<blockquote< /p>
+
+                </div>
+
+
+            </div>
+
+            <div class="row js--wp-5">
+
+                <div class="col span-1-of-3 box">
+
+                    <h3>
+                        <blockquote>Vždy může být hůř...</blockquote>
+                    </h3>
+
+                </div>
+
+
+                <div class="col span-2-of-3 box">
+
+                    <p>
+                        Plány se zásedně mění, <strong>když vážně onemocní někdo z Vašich blízkých.</strong>
+                    </p>
+
+                    <p>
+                        A tím vážně myslím, nevratně, nevyléčitelně.
+                    </p>
+                    <h3 class="h3_about">Táta</h3>
+                    <p>Člověk, kterého nezlomilo několik infarktů ani několik týdnů trvající koma způsobené sražením na
+                        přechodu nezodpovědným řidičem.
+                        Do posledního dne pořád ten samý vysmátý optimista a člověk oddaný rodině.
+                    </p>
+                    <p>Tady reálně skončilo moje dětství, i když jsem už dávno předtím dovršil plnoletosti.</p>
+
+                    <h3 class="h3_about">Největší nepřítel je čas</h3>
+
+                    <p>Život přede mě postavil přesýpací hodiny a já udělal tu nejšílenější věc v mém životě. Skončil
+                        jsem v
+                        práci. Co jinýho jsem měl jako dělat, když se projevy nemoci někoho, koho máte rádi začnou
+                        stupňovat
+                        a jediné co je Vám nabídnuto jsou dražší a silnější medikamenty, které způsobují větší vedlejší
+                        účinky?</p>
+                    <p><strong>Kdo jinej než já, táto?</strong></p>
+                    <p>Možná jsem se ještě mohl zmínit, že jsem k tomu programování, přidal ještě maturitní obor na
+                        soukromé
+                        střední. Což je ideální kombinace, když nemáte peníze na nájem.
+                        Zatímco Vaši vrstevníci plánují budoucnost, Vy máte strach co se může doma stát ve Vaší
+                        nepřítomnosti a bojíte zítřka.
+                    </p>
+                </div>
+            </div>
 
 
 
 
 
-		<!--
+            <div class="row js--wp-5">
+                <div class="col span-1-of-3 box">
+
+                    <h3>
+                        <blockquote>Bylo to fakt zlý</blockquote>
+                    </h3>
+
+                    <p>Léky už v určitých stádiích nemoci fungují jak se jim zachce a vy se můžete jenom trapnými pokusy
+                        to
+                        utrpení zmírnit tím, že tam prostě jste. Ve dne v noci sledujete tu bolest a nemůžete s tím nic
+                        udělat.
+                    </p>
+                </div>
+
+                <div class="col span-2-of-3 box">
+
+                    <h3 class="h3_about">Žít mimo systém</h3>
+
+                    <p>Cenu léků neřešíte i když stojí víc než měsíční nájem a dluhy rostou závratným tempem.
+                        Do práce chodit nemůžete, protože prostě nemáte kdy a upřímně, opustili byste rodiče na mém
+                        místě?
+                    </p>
+
+
+                    <p>Zamítli nám ošetřovné i kartu ZTP. Pamatuji na ty slova: "Ležící člověk to přece nepotřebuje."
+                        Vyhodí Vás z pracáku, na nic nemáte nárok, zdravotní, sociální, jídlo, nájem a už to pěkně lítá.
+                    </p>
+                    <p>Peníze sháníte ve dne v noci, ale prostě to nestačí. Exekutoři jsou přátelští jenom pokud jim to
+                        sype
+                        a žádnou pomoc od nikoho nečekejte.</p>
+
+                    <p>Na programování už dávno nebyl čas, ale maturitu jsem slíbil a tak se taky stalo.
+                        Někteří přátelé, kterým jste tolik pomohli se k Vám otočí zády
+                        aniž byste od nich něco chtěli,
+                        někteří se Vaši situaci pokusí zneužít, aby se obohatili
+                        a to málo co Vám zbyde je člověku o tolik víc vzácnější.</p>
+                    <p>Jsou věci na které se připravujete roky, ale když přijdou, srazí Vás. </p>
+
+                </div>
+            </div>
+            <div class="row js--wp-5">
+
+
+
+                <div class="col span-2-of-3 box">
+
+
+
+
+                    <h3 class="h3_about">Nemáš šanci</h3>
+                    <p>Tobě nestačí jak sis podělal život? Nemůžeš se na chvíli chovat zodpovědně, normálně?
+                        Oni vydělávají peníze, ale to riziko. Něco vytopíš, rentgeny svárů budou špatné a všechno ti
+                        naúčtují, demontáže, montáže, materiál, škody, zastavení výroby v nějaké z firem.
+                        V Německu ti napaří klidně 100 000€ denně a to nemluvím o smluvních pokutách.
+                    </p>
+                    <p> Jak chcete ale pracovat jako kvalifikovaný profesionál, bez odpovídajícího vzdělání, bez praxe a
+                        zkušeností?
+                    </p>
+
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h3>
+                        <blockquote>Svářeči mají peníze</blockquote>
+                    </h3>
+                    <p>Cíl bylo Německo, bez znalosti němčiny. Jediná možnost, živnost,
+                        protože zaměstnanci vydělají málo a já potřebuji peníze
+                        co nejvíc a co nejdřív.</p>
+                </div>
+
+            </div>
+
+            <div class="row js--wp-5">
+
+
+
+                <div class="col span-2-of-3 box">
+
+
+                    <h3 class="h3_about">Musíte je přesvědčit</h3>
+                    <p>a sehnat další peníze, hodně peněz...
+                        a taky kontrakt, jste přece podnikatelé, že?
+                    </p>
+                    <p><strong>1 svářecí průkaz cca 1000€</strong></p>
+                    <p>Tak si uděláme aspoň 3. Od každé svařovací metody jeden.</p>
+                    <p>Vybavení do začátku, auto, povolení, peníze na cestu, ubytování 10 000€</p>
+                    <p>Když už dlužíte obrovské částky, tak to není zase tolik...</p>
+
+                    <h3 class="h3_about">Naučit se za pár měsíců, co se učí roky</h3>
+                    <p>Nebudu lhát, bylo to obrovské zoufalství. Slyšet ze všech stran, včetně profíků z oboru,
+                        že to prostě nejde. A ono to nejde. Roky zkušeností nenahradíte, ale můžete se alespoň přiblížit
+                        nějakému přijatelnému výsledku.
+                    </p>
+                    <p>Svářečské zkoušky jsem složil a vycestoval. Nebyl čas se někde zaučovat.</p>
+
+                    <p>Není tolik lidí na planetě Zemi, kolikrát jsem za tu dobu klopýtnul, kolikrát jsem si říkal,
+                        že tohle je konec, že už to nezvládnu.</p>
+
+                </div>
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote>Peníze jsem sehnal od "lidí," od kterých si vzít peníze nikdy nechcete</blockquote>
+                    </h3>
+
+                    <p>Jenže je taky musíte vrátit, že jo? Ublížit mi stejně víc nemohli.A stejně jim moc nerozumíte,
+                        protože mluví docela blbě česky.</p>
+
+                </div>
+            </div>
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote> 1200km řídit do práce, vyskočit z auta a jít dělat těžkou montáž na 12 hodin
+                            denně</blockquote>
+                    </h3>
+
+                </div>
+
+                <div class="col span-2-of-3 box">
+
+                    <p>Cesty do práce někdy trvaly 12 někdy 15 hodin. Někdy byla práce blíž a jelo se třeba "600km."
+                        No a když s sebou plácnete konečně po dvou dnech
+                        beze spánku do postele, měli byste se naučit taky trochu německy, ne?
+                    </p>
+
+                    <h3 class="h3_about">Někdy je tělo vyčerpané natolik, že nedokáže usnout?</h3>
+                    <p>Znáte to? U lidí jako já, to v
+                        takovém vytížení je docela normální jev</p>
+                    <p>Někteří kolegové to řeší alkoholem, jiní drogami, či farmaceutiky. Někteří to kombinují všechno.
+                        <strong>Já to využil k učení němčiny.</strong>
+                    </p>
+
+                    <p>Během prvního půl roku jsem fakturoval poprvé v životě
+                        částku <strong>v přepočtu 100 000 CZK,</strong> služební auto, placené ubytování. </p>
+                    <p>Po roce jsem běžne fakturoval <strong>3200€+</strong></p>
+                    <p>Další rok <strong>4000€</strong> a během 3let jsem fakturoval částky přesahující
+                        <strong>5000€</strong> měsíčně.
+                    </p>
+                    <p>To docela jde, ne? Na někoho kdo před pár měsíci nevěděl, co je to vingl, kořen, frézka a neuměl
+                        vyměnit sklo na kukle.</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-2-of-3 box">
+
+                    <h3 class="h3_about">Po dvou letech nabídka stavbyvedoucího v Hanau</h3>
+                    <p>No a já to po dlouhém váhání vzal a zase padl na hubu. Něco se holt prostě nenaučíte za pár
+                        měsíců,
+                        ale víte co?
+                        Oni mi po pár měsících nabídli, že budu dělat zástupce a že ze mě stavbyvedoucího udělají.
+                    </p>
+
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote>Štěstí? Těžko. Talent? <br>Ani ne.
+                    </h3>
+                    </blockquote>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-3-of-3 box">
+
+
+                    <h3>Práce je hotová a teď si půjdeme splnit sny.
+
+                    </h3>
+
+                    <p><strong>Co takhle zkusit zase programovat...</strong></p>
+
+                </div>
+            </div>
+
+
+
+    </div>
+
+    </section>
+    </div>
+
+    <!-- ----------------------
+
+    ABOUT ME ENGLISH
+
+--------------------------- -->
+
+    <div class="ln2">
+        <section class="section-knowledge second js--section-about" id="about-en">
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-1-of-2 box">
+                    <div class="about-box">
+                        <h2>About me (in a shortcut)</h2>
+                        <ul>
+                            <li>Age: 32 </li>
+                            <li>8 International welding certifications of the highest level</li>
+                            <li>Mezinárodní potrubářský kurz s atestací</li>
+                            <li>Driving class class B</li>
+                            <li>Mileage 100,000+ last year </li>
+                            <li>Zkušenosti v zahraničí</li>
+                            <li>Welder</li>
+                            <li>Groups leader</li>
+                            <li>Project manager´s representative</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-2 box">
+                    <div class="about-box">
+                        <h2>Záliby</h2>
+                        <ul>
+                            <li>Tvorba a design webových stránek</li>
+                            <li>Svařování</li>
+                            <li>Anglický a německý jazyk</li>
+                            <li>Moderní technologie </li>
+                            <li>Úpravy fotek&amp;videí </li>
+                            <li>Sport</li>
+                            <li>a sebezdokonalování...</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row js--wp-5">
+                <div class="col span-3-of-3 box">
+                    <h2>If you like to read</h2>
+                </div>
+            </div>
+
+            <div class="row js--wp-5">
+                <div class="col span-2-of-3 box">
+                    <h2>Zpátky na začátek?</h2>
+                    <p class="p_about">Zajímalo by mě, zda to někdo doscrolloval až sem.</p>
+                    <p class="p_about">Měl bych tu psát něco o motivaci a pozitivním myšlení a o tom jak jsem ten
+                        nejlepší a
+                        povahově nejdokonalejší kandidát pro potentionálního zaměstnavatele.
+                    </p>
+
+                    <p class="p_about">Jenže já ani nevím jestli spadám do obecné kategorie normálnosti. Spíš ne.</p>
+
+                    <h3 class="h3_about">Život si můžete plánovat jak chcete...</h3>
+
+                    <p>Kódit a programovat jsem se chtěl naučit už před více jak 6ti lety.
+                        A nejenom chtěl, já se tomu věnoval. Chodil jsem do práce, která mě nebavila, bydlel s tátou a
+                        měl
+                        "jasnej plán:"
+                        <br> <strong>budu programátor.</strong><br>
+                    </p>
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h2>Proč</h2>
+
+                    <p>Proč bych opouštěl slibně rozjetou kariéru a vrátil se zpátky na začátek?
+                    </p>
+
+                    <p class="p_about">
+                        Kariéra a peníze jsou jedna věc, ale se vidím v IT.
+                    </p>
+
+                    <p class="p_about">
+                    <blockquote> Chci se posouvat, mít možnost vědět a umět víc. IT je budoucnost a já chci být její
+                        součastí...
+                        </p>
+
+
+                        <p>i za cenu, že se vzdám práce za 5000€ měsíčně<blockquote< /p>
+
+                </div>
+
+
+            </div>
+
+            <div class="row js--wp-5">
+
+                <div class="col span-1-of-3 box">
+
+                    <h3>
+                        <blockquote>Vždy může být hůř...</blockquote>
+                    </h3>
+
+                </div>
+
+
+                <div class="col span-2-of-3 box">
+
+                    <p>
+                        Plány se zásedně mění, <strong>když vážně onemocní někdo z Vašich blízkých.</strong>
+                    </p>
+
+                    <p>
+                        A tím vážně myslím, nevratně, nevyléčitelně.
+                    </p>
+                    <h3 class="h3_about">Táta</h3>
+                    <p>Člověk, kterého nezlomilo několik infarktů ani několik týdnů trvající koma způsobené sražením na
+                        přechodu nezodpovědným řidičem.
+                        Do posledního dne pořád ten samý vysmátý optimista a člověk oddaný rodině.
+                    </p>
+                    <p>Tady reálně skončilo moje dětství, i když jsem už dávno předtím dovršil plnoletosti.</p>
+
+                    <h3 class="h3_about">Největší nepřítel je čas</h3>
+
+                    <p>Život přede mě postavil přesýpací hodiny a já udělal tu nejšílenější věc v mém životě. Skončil
+                        jsem v
+                        práci. Co jinýho jsem měl jako dělat, když se projevy nemoci někoho, koho máte rádi začnou
+                        stupňovat
+                        a jediné co je Vám nabídnuto jsou dražší a silnější medikamenty, které způsobují větší vedlejší
+                        účinky?</p>
+                    <p><strong>Kdo jinej než já, táto?</strong></p>
+                    <p>Možná jsem se ještě mohl zmínit, že jsem k tomu programování, přidal ještě maturitní obor na
+                        soukromé
+                        střední. Což je ideální kombinace, když nemáte peníze na nájem.
+                        Zatímco Vaši vrstevníci plánují budoucnost, Vy máte strach co se může doma stát ve Vaší
+                        nepřítomnosti a bojíte zítřka.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="row js--wp-5">
+                <div class="col span-1-of-3 box">
+
+                    <h3>
+                        <blockquote>Bylo to fakt zlý</blockquote>
+                    </h3>
+
+                    <p>Léky už v určitých stádiích nemoci fungují jak se jim zachce a vy se můžete jenom trapnými pokusy
+                        to
+                        utrpení zmírnit tím, že tam prostě jste. Ve dne v noci sledujete tu bolest a nemůžete s tím nic
+                        udělat.
+                    </p>
+                </div>
+
+                <div class="col span-2-of-3 box">
+
+                    <h3 class="h3_about">Žít mimo systém</h3>
+
+                    <p>Cenu léků neřešíte i když stojí víc než měsíční nájem a dluhy rostou závratným tempem.
+                        Do práce chodit nemůžete, protože prostě nemáte kdy a upřímně, opustili byste rodiče na mém
+                        místě?
+                    </p>
+
+
+                    <p>Zamítli nám ošetřovné i kartu ZTP. Pamatuji na ty slova: "Ležící člověk to přece nepotřebuje."
+                        Vyhodí Vás z pracáku, na nic nemáte nárok, zdravotní, sociální, jídlo, nájem a už to pěkně lítá.
+                    </p>
+                    <p>Peníze sháníte ve dne v noci, ale prostě to nestačí. Exekutoři jsou přátelští jenom pokud jim to
+                        sype
+                        a žádnou pomoc od nikoho nečekejte.</p>
+
+                    <p>Na programování už dávno nebyl čas, ale maturitu jsem slíbil a tak se taky stalo.
+                        Někteří přátelé, kterým jste tolik pomohli se k Vám otočí zády
+                        aniž byste od nich něco chtěli,
+                        někteří se Vaši situaci pokusí zneužít, aby se obohatili
+                        a to málo co Vám zbyde je člověku o tolik víc vzácnější.</p>
+                    <p>Jsou věci na které se připravujete roky, ale když přijdou, srazí Vás. </p>
+
+                </div>
+            </div>
+            <div class="row js--wp-5">
+
+
+
+                <div class="col span-2-of-3 box">
+
+
+
+
+                    <h3 class="h3_about">Nemáš šanci</h3>
+                    <p>Tobě nestačí jak sis podělal život? Nemůžeš se na chvíli chovat zodpovědně, normálně?
+                        Oni vydělávají peníze, ale to riziko. Něco vytopíš, rentgeny svárů budou špatné a všechno ti
+                        naúčtují, demontáže, montáže, materiál, škody, zastavení výroby v nějaké z firem.
+                        V Německu ti napaří klidně 100 000€ denně a to nemluvím o smluvních pokutách.
+                    </p>
+                    <p> Jak chcete ale pracovat jako kvalifikovaný profesionál, bez odpovídajícího vzdělání, bez praxe a
+                        zkušeností?
+                    </p>
+
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h3>
+                        <blockquote>Svářeči mají peníze</blockquote>
+                    </h3>
+                    <p>Cíl bylo Německo, bez znalosti němčiny. Jediná možnost, živnost,
+                        protože zaměstnanci vydělají málo a já potřebuji peníze
+                        co nejvíc a co nejdřív.</p>
+                </div>
+
+            </div>
+
+            <div class="row js--wp-5">
+
+
+
+                <div class="col span-2-of-3 box">
+
+
+                    <h3 class="h3_about">Musíte je přesvědčit</h3>
+                    <p>a sehnat další peníze, hodně peněz...
+                        a taky kontrakt, jste přece podnikatelé, že?
+                    </p>
+                    <p><strong>1 svářecí průkaz cca 1000€</strong></p>
+                    <p>Tak si uděláme aspoň 3. Od každé svařovací metody jeden.</p>
+                    <p>Vybavení do začátku, auto, povolení, peníze na cestu, ubytování 10 000€</p>
+                    <p>Když už dlužíte obrovské částky, tak to není zase tolik...</p>
+
+                    <h3 class="h3_about">Naučit se za pár měsíců, co se učí roky</h3>
+                    <p>Nebudu lhát, bylo to obrovské zoufalství. Slyšet ze všech stran, včetně profíků z oboru,
+                        že to prostě nejde. A ono to nejde. Roky zkušeností nenahradíte, ale můžete se alespoň přiblížit
+                        nějakému přijatelnému výsledku.
+                    </p>
+                    <p>Svářečské zkoušky jsem složil a vycestoval. Nebyl čas se někde zaučovat.</p>
+
+                    <p>Není tolik lidí na planetě Zemi, kolikrát jsem za tu dobu klopýtnul, kolikrát jsem si říkal,
+                        že tohle je konec, že už to nezvládnu.</p>
+
+                </div>
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote>Peníze jsem sehnal od "lidí," od kterých si vzít peníze nikdy nechcete</blockquote>
+                    </h3>
+
+                    <p>Jenže je taky musíte vrátit, že jo? Ublížit mi stejně víc nemohli.A stejně jim moc nerozumíte,
+                        protože mluví docela blbě česky.</p>
+
+                </div>
+            </div>
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote> 1200km řídit do práce, vyskočit z auta a jít dělat těžkou montáž na 12 hodin
+                            denně</blockquote>
+                    </h3>
+
+                </div>
+
+                <div class="col span-2-of-3 box">
+
+                    <p>Cesty do práce někdy trvaly 12 někdy 15 hodin. Někdy byla práce blíž a jelo se třeba "600km."
+                        No a když s sebou plácnete konečně po dvou dnech
+                        beze spánku do postele, měli byste se naučit taky trochu německy, ne?
+                    </p>
+
+                    <h3 class="h3_about">Někdy je tělo vyčerpané natolik, že nedokáže usnout?</h3>
+                    <p>Znáte to? U lidí jako já, to v
+                        takovém vytížení je docela normální jev</p>
+                    <p>Někteří kolegové to řeší alkoholem, jiní drogami, či farmaceutiky. Někteří to kombinují všechno.
+                        <strong>Já to využil k učení němčiny.</strong>
+                    </p>
+
+                    <p>Během prvního půl roku jsem fakturoval poprvé v životě
+                        částku <strong>v přepočtu 100 000 CZK,</strong> služební auto, placené ubytování. </p>
+                    <p>Po roce jsem běžne fakturoval <strong>3200€+</strong></p>
+                    <p>Další rok <strong>4000€</strong> a během 3let jsem fakturoval částky přesahující
+                        <strong>5000€</strong> měsíčně.
+                    </p>
+                    <p>To docela jde, ne? Na někoho kdo před pár měsíci nevěděl, co je to vingl, kořen, frézka a neuměl
+                        vyměnit sklo na kukle.</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-2-of-3 box">
+
+                    <h3 class="h3_about">Po dvou letech nabídka stavbyvedoucího v Hanau</h3>
+                    <p>No a já to po dlouhém váhání vzal a zase padl na hubu. Něco se holt prostě nenaučíte za pár
+                        měsíců,
+                        ale víte co?
+                        Oni mi po pár měsících nabídli, že budu dělat zástupce a že ze mě stavbyvedoucího udělají.
+                    </p>
+
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote>Štěstí? Těžko. Talent? <br>Ani ne.
+                    </h3>
+                    </blockquote>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-3-of-3 box">
+
+
+                    <h3>Práce je hotová a teď si půjdeme splnit sny.
+
+                    </h3>
+
+                    <p><strong>Co takhle zkusit zase programovat...</strong></p>
+
+                </div>
+            </div>
+
+
+
+    </div>
+
+    </section>
+    </div>
+
+    <!-- ----------
+
+    ABOUT ME GERMAN
+
+----------------- -->
+
+    <div class="ln3">
+        <section class="section-knowledge second js--section-about" id="about-de">
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-1-of-2 box">
+                    <div class="about-box">
+                        <h2>Über mich (in einer Verknüpfung) </h2>
+                        <ul>
+                            <li>Věk: 32 </li>
+                            <li>Internationale Schweißzertifizierungen höchstes Niveau</li>
+                            <li>Internationaler Rohrleitungskurs mit Bescheinigung </li>
+                            <li>Führerschein Klasse B</li>
+                            <li>Kilometerstand im letzten Jahr 100.000+ </li>
+                            <li>Zkušenosti v zahraničí</li>
+                            <li>Schweißer</li>
+                            <li>Gruppenleiter</li>
+                            <li>Vertreter des Projektmanagers </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-2 box">
+                    <div class="about-box">
+                        <h2>Záliby</h2>
+                        <ul>
+                            <li>Tvorba a design webových stránek</li>
+                            <li>Svařování</li>
+                            <li>Anglický a německý jazyk</li>
+                            <li>Moderní technologie </li>
+                            <li>Úpravy fotek&amp;videí </li>
+                            <li>Sport</li>
+                            <li>a sebezdokonalování...</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row js--wp-5">
+                <div class="col span-3-of-3 box">
+                    <h2>Wenn du gerne liest </h2>
+                </div>
+            </div>
+
+            <div class="row js--wp-5">
+                <div class="col span-2-of-3 box">
+                    <h2>Zpátky na začátek?</h2>
+                    <p class="p_about">Zajímalo by mě, zda to někdo doscrolloval až sem.</p>
+                    <p class="p_about">Měl bych tu psát něco o motivaci a pozitivním myšlení a o tom jak jsem ten
+                        nejlepší a
+                        povahově nejdokonalejší kandidát pro potentionálního zaměstnavatele.
+                    </p>
+
+                    <p class="p_about">Jenže já ani nevím jestli spadám do obecné kategorie normálnosti. Spíš ne.</p>
+
+                    <h3 class="h3_about">Život si můžete plánovat jak chcete...</h3>
+
+                    <p>Kódit a programovat jsem se chtěl naučit už před více jak 6ti lety.
+                        A nejenom chtěl, já se tomu věnoval. Chodil jsem do práce, která mě nebavila, bydlel s tátou a
+                        měl
+                        "jasnej plán:"
+                        <br> <strong>budu programátor.</strong><br>
+                    </p>
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h2>Proč</h2>
+
+                    <p>Proč bych opouštěl slibně rozjetou kariéru a vrátil se zpátky na začátek?
+                    </p>
+
+                    <p class="p_about">
+                        Kariéra a peníze jsou jedna věc, ale se vidím v IT.
+                    </p>
+
+                    <p class="p_about">
+                    <blockquote> Chci se posouvat, mít možnost vědět a umět víc. IT je budoucnost a já chci být její
+                        součastí...
+                        </p>
+
+
+                        <p>i za cenu, že se vzdám práce za 5000€ měsíčně<blockquote< /p>
+
+                </div>
+
+
+            </div>
+
+            <div class="row js--wp-5">
+
+                <div class="col span-1-of-3 box">
+
+                    <h3>
+                        <blockquote>Vždy může být hůř...</blockquote>
+                    </h3>
+
+                </div>
+
+
+                <div class="col span-2-of-3 box">
+
+                    <p>
+                        Plány se zásedně mění, <strong>když vážně onemocní někdo z Vašich blízkých.</strong>
+                    </p>
+
+                    <p>
+                        A tím vážně myslím, nevratně, nevyléčitelně.
+                    </p>
+                    <h3 class="h3_about">Táta</h3>
+                    <p>Člověk, kterého nezlomilo několik infarktů ani několik týdnů trvající koma způsobené sražením na
+                        přechodu nezodpovědným řidičem.
+                        Do posledního dne pořád ten samý vysmátý optimista a člověk oddaný rodině.
+                    </p>
+                    <p>Tady reálně skončilo moje dětství, i když jsem už dávno předtím dovršil plnoletosti.</p>
+
+                    <h3 class="h3_about">Největší nepřítel je čas</h3>
+
+                    <p>Život přede mě postavil přesýpací hodiny a já udělal tu nejšílenější věc v mém životě. Skončil
+                        jsem v
+                        práci. Co jinýho jsem měl jako dělat, když se projevy nemoci někoho, koho máte rádi začnou
+                        stupňovat
+                        a jediné co je Vám nabídnuto jsou dražší a silnější medikamenty, které způsobují větší vedlejší
+                        účinky?</p>
+                    <p><strong>Kdo jinej než já, táto?</strong></p>
+                    <p>Možná jsem se ještě mohl zmínit, že jsem k tomu programování, přidal ještě maturitní obor na
+                        soukromé
+                        střední. Což je ideální kombinace, když nemáte peníze na nájem.
+                        Zatímco Vaši vrstevníci plánují budoucnost, Vy máte strach co se může doma stát ve Vaší
+                        nepřítomnosti a bojíte se zítřka.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="row js--wp-5">
+                <div class="col span-1-of-3 box">
+
+                    <h3>
+                        <blockquote>Bylo to fakt zlý</blockquote>
+                    </h3>
+
+                    <p>Léky už v určitých stádiích nemoci fungují jak se jim zachce a vy se můžete jenom trapnými pokusy
+                        to
+                        utrpení zmírnit tím, že tam prostě jste. Ve dne v noci sledujete tu bolest a nemůžete s tím nic
+                        udělat.
+                    </p>
+                </div>
+
+                <div class="col span-2-of-3 box">
+
+                    <h3 class="h3_about">Žít mimo systém</h3>
+
+                    <p>Cenu léků neřešíte i když stojí víc než měsíční nájem a dluhy rostou závratným tempem.
+                        Do práce chodit nemůžete, protože prostě nemáte kdy a upřímně, opustili byste rodiče na mém
+                        místě?
+                    </p>
+
+
+                    <p>Zamítli nám ošetřovné i kartu ZTP. Pamatuji na ty slova: "Ležící člověk to přece nepotřebuje."
+                        Vyhodí Vás z pracáku, na nic nemáte nárok, zdravotní, sociální, jídlo, nájem a už to pěkně lítá.
+                    </p>
+                    <p>Peníze sháníte ve dne v noci, ale prostě to nestačí. Exekutoři jsou přátelští jenom pokud jim to
+                        sype
+                        a žádnou pomoc od nikoho nečekejte.</p>
+
+                    <p>Na programování už dávno nebyl čas, ale maturitu jsem slíbil a tak se taky stalo.
+                        Někteří přátelé, kterým jste tolik pomohli se k Vám otočí zády
+                        aniž byste od nich něco chtěli,
+                        někteří se Vaši situaci pokusí zneužít, aby se obohatili
+                        a to málo co Vám zbyde je člověku o tolik víc vzácnější.</p>
+                    <p>Jsou věci na které se připravujete roky, ale když přijdou, srazí Vás. </p>
+
+                </div>
+            </div>
+            <div class="row js--wp-5">
+
+
+
+                <div class="col span-2-of-3 box">
+
+
+
+
+                    <h3 class="h3_about">Nemáš šanci</h3>
+                    <p>Tobě nestačí jak sis podělal život? Nemůžeš se na chvíli chovat zodpovědně, normálně?
+                        Oni vydělávají peníze, ale to riziko. Něco vytopíš, rentgeny svárů budou špatné a všechno ti
+                        naúčtují, demontáže, montáže, materiál, škody, zastavení výroby v nějaké z firem.
+                        V Německu ti napaří klidně 100 000€ denně a to nemluvím o smluvních pokutách.
+                    </p>
+                    <p> Jak chcete ale pracovat jako kvalifikovaný profesionál, bez odpovídajícího vzdělání, bez praxe a
+                        zkušeností?
+                    </p>
+
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h3>
+                        <blockquote>Svářeči mají peníze</blockquote>
+                    </h3>
+                    <p>Cíl bylo Německo, bez znalosti němčiny. Jediná možnost, živnost,
+                        protože zaměstnanci vydělají málo a já potřebuji peníze
+                        co nejvíc a co nejdřív.</p>
+                </div>
+
+            </div>
+
+            <div class="row js--wp-5">
+
+
+
+                <div class="col span-2-of-3 box">
+
+
+                    <h3 class="h3_about">Musíte je přesvědčit</h3>
+                    <p>a sehnat další peníze, hodně peněz...
+                        a taky kontrakt, jste přece podnikatelé, že?
+                    </p>
+                    <p><strong>1 svářecí průkaz cca 1000€</strong></p>
+                    <p>Tak si uděláme aspoň 3. Od každé svařovací metody jeden.</p>
+                    <p>Vybavení do začátku, auto, povolení, peníze na cestu, ubytování 10 000€</p>
+                    <p>Když už dlužíte obrovské částky, tak to není zase tolik...</p>
+
+                    <h3 class="h3_about">Naučit se za pár měsíců, co se učí roky</h3>
+                    <p>Nebudu lhát, bylo to obrovské zoufalství. Slyšet ze všech stran, včetně profíků z oboru,
+                        že to prostě nejde. A ono to nejde. Roky zkušeností nenahradíte, ale můžete se alespoň přiblížit
+                        nějakému přijatelnému výsledku.
+                    </p>
+                    <p>Svářečské zkoušky jsem složil a vycestoval. Nebyl čas se někde zaučovat.</p>
+
+                    <p>Není tolik lidí na planetě Zemi, kolikrát jsem za tu dobu klopýtnul, kolikrát jsem si říkal,
+                        že tohle je konec, že už to nezvládnu.</p>
+
+                </div>
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote>Peníze jsem sehnal od "lidí," od kterých si vzít peníze nikdy nechcete</blockquote>
+                    </h3>
+
+                    <p>Jenže je taky musíte vrátit, že jo? Ublížit mi stejně víc nemohli.A stejně jim moc nerozumíte,
+                        protože mluví docela blbě česky.</p>
+
+                </div>
+            </div>
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote> 1200km řídit do práce, vyskočit z auta a jít dělat těžkou montáž na 12 hodin
+                            denně</blockquote>
+                    </h3>
+
+                </div>
+
+                <div class="col span-2-of-3 box">
+
+                    <p>Cesty do práce někdy trvaly 12 někdy 15 hodin. Někdy byla práce blíž a jelo se třeba "600km."
+                        No a když s sebou plácnete konečně po dvou dnech
+                        beze spánku do postele, měli byste se naučit taky trochu německy, ne?
+                    </p>
+
+                    <h3 class="h3_about">Někdy je tělo vyčerpané natolik, že nedokáže usnout?</h3>
+                    <p>Znáte to? U lidí jako já, to v
+                        takovém vytížení je docela normální jev</p>
+                    <p>Někteří kolegové to řeší alkoholem, jiní drogami, či farmaceutiky. Někteří to kombinují všechno.
+                        <strong>Já to využil k učení němčiny.</strong>
+                    </p>
+
+                    <p>Během prvního půl roku jsem fakturoval poprvé v životě
+                        částku <strong>v přepočtu 100 000 CZK,</strong> služební auto, placené ubytování. </p>
+                    <p>Po roce jsem běžne fakturoval <strong>3200€+</strong></p>
+                    <p>Další rok <strong>4000€</strong> a během 3let jsem fakturoval částky přesahující
+                        <strong>5000€</strong> měsíčně.
+                    </p>
+                    <p>To docela jde, ne? Na někoho kdo před pár měsíci nevěděl, co je to vingl, kořen, frézka a neuměl
+                        vyměnit sklo na kukle.</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-2-of-3 box">
+
+                    <h3 class="h3_about">Po dvou letech nabídka stavbyvedoucího v Hanau</h3>
+                    <p>No a já to po dlouhém váhání vzal a zase padl na hubu. Něco se holt prostě nenaučíte za pár
+                        měsíců,
+                        ale víte co?
+                        Oni mi po pár měsících nabídli, že budu dělat zástupce a že ze mě stavbyvedoucího udělají.
+                    </p>
+
+                </div>
+
+                <div class="col span-1-of-3 box">
+                    <h3 class="h3_about">
+                        <blockquote>Štěstí? Těžko. Talent? <br>Ani ne.
+                    </h3>
+                    </blockquote>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="row js--wp-5">
+
+                <div class="col span-3-of-3 box">
+
+
+                    <h3>Práce je hotová a teď si půjdeme splnit sny.
+
+                    </h3>
+
+                    <p><strong>Co takhle zkusit zase programovat...</strong></p>
+
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+
+    <section class="section-ostatni">
+        <div class="images-wrapper">
+            <img src="resources/gallery/8.jpg" class="slider-img selected" alt="SliderImg" />
+            <img src="resources/gallery/7.jpg" class="slider-img" alt="SliderImg" />
+            <img src="resources/gallery/6.jpg" class="slider-img" alt="SliderImg" />
+            <img src="resources/gallery/4.jpg" class="slider-img" alt="SliderImg" />
+            <img src="resources/gallery/5.jpg" class="slider-img selected" alt="SliderImg" />
+            <img src="resources/gallery/3.jpg" class="slider-img" alt="SliderImg" />
+            <img src="resources/gallery/2.jpg" class="slider-img" alt="SliderImg" />
+            <img src="resources/gallery/1.jpg" class="slider-img" alt="SliderImg" />
+        </div>
+
+        <ul class="bullet-list">
+            <li class="bullets selected">
+                <div class="outer-circle"><span></span></div>
+            </li>
+            <li class="bullets">
+                <div class="outer-circle"><span></span></div>
+            </li>
+            <li class="bullets">
+                <div class="outer-circle"><span></span></div>
+            </li>
+            <li class="bullets">
+                <div class="outer-circle"><span></span></div>
+            </li>
+            <li class="bullets">
+                <div class="outer-circle"><span></span></div>
+            </li>
+            <li class="bullets">
+                <div class="outer-circle"><span></span></div>
+            </li>
+            <li class="bullets">
+                <div class="outer-circle"><span></span></div>
+            </li>
+            <li class="bullets">
+                <div class="outer-circle"><span></span></div>
+            </li>
+        </ul>
+
+    </section>
+
+
+
+    <!--
+
+        VIDEO GALLERY
+
+    -->
+
+    <section class="video-gallery">
+        <h1 class="h1">Překlady pro Lady Kracher</h1>
+        <div class="gallery-container">
+            <div class="video-cover">
+                <iframe  src="https://www.youtube.com/embed/h8ZoSbIvZxo" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="video-cover">
+
+                <iframe  src="https://www.youtube.com/embed/2imxWzw4EkE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="video-cover">
+                <iframe  src="https://www.youtube.com/embed/OvrS9QaTfew" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="video-cover">
+                <iframe  src="https://www.youtube.com/embed/VULGONLGJIw" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="video-cover">
+                <iframe  src="https://www.youtube.com/embed/DieZX1MFayo" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="video-cover">
+                <iframe  src="https://www.youtube.com/embed/k7jfLafPdc0" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--
 		<section id="sign-up">
 			<div class="row">
 				<h2>Formulář na konec</h2>
@@ -512,16 +2290,16 @@ OSTATNÍ DOVEDNOSTI
 		</section>
 -->
 
-<!------------------------------------------------
+    <!------------------------------------------------
 
 			BACK TO TOP
 
 		-------------------------------------------------------->
 
 
-			<a href="#" class="back-to-top">
-				<ion-icon name="caret-up-circle-outline"></ion-icon>
-			</a>
+    <a href="#" class="back-to-top">
+        <ion-icon name="caret-up-circle-outline"></ion-icon>
+    </a>
 
 
 
@@ -529,53 +2307,69 @@ OSTATNÍ DOVEDNOSTI
 
 
 
-		   <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">O nás</a></li>
-                        <li><a href="#">Blog</a></li>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">O nás</a></li>
+                    <li><a href="#">Blog</a></li>
 
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="#"><ion-icon name="logo-facebook" class="footer-1"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter"  class="footer-2"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-google"  class="footer-3"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram"  class="footer-4"></ion-icon></a></li>
-                    </ul>
-                </div>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
             </div>
-            <div class="row">
-				<p><strong>Proč mám o tuto pozici zájem?</strong> Stručně...</p>
-				<p>Největší motivace jsou <strong>děti.</strong> Cestoval jsem hodně, chci mít možnost mít je nablízku a<strong> usadit se.</strong></p>
-				<p> Vždy jsem chtěl umět vytvářet webové stránky a programovat, <strong>baví mě to.</strong></p>
-				<p>
-                   Vyhotoveno jako forma učení.
-                </p>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#">
+                            <ion-icon name="logo-facebook" class="footer-1"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-twitter" class="footer-2"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-google" class="footer-3"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-instagram" class="footer-4"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p><strong>Proč mám o tuto pozici zájem?</strong> Stručně...</p>
+            <p>Největší motivace jsou <strong>děti.</strong> Cestoval jsem hodně, chci mít možnost mít je nablízku
+                a<strong> usadit se.</strong></p>
+            <p> Vždy jsem chtěl umět vytvářet webové stránky a programovat, <strong>baví mě to.</strong></p>
+            <p>
+                Vyhotoveno jako forma učení #táta &#9829; Semper Fi
+            </p>
 
-			</div>
+        </div>
 
 
 
 
 
 
-        </footer>
+    </footer>
 
 
-		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        function set_lang(lang) {
+            document.body.className = document.body.className.replace(document.body.className.substring(0, 5), lang);
+        }
+    </script>
+
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/script.js"></script>
 
-	</body>
+</body>
 
-	</html>
+</html>
 </DOCTYPE>

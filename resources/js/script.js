@@ -1,6 +1,25 @@
+
+/* 
+LANGUAGE SWITCH
+*/
+
+
+function set_lang(lang)
+{
+  document.body.className = document.body.className.replace(document.body.className.substring(0,5), lang);
+}
+
+
+
+
 $(document).ready(function () {
 
+	
 
+/*
+
+
+*/
 
 
 	$("#nezajima").on("click", function () {
@@ -16,9 +35,10 @@ $(document).ready(function () {
 			}
 		},
 		{
-			offset: "60px;",
+			offset: "960px;",
 		}
 	);
+
 
 	/* Scroll on buttons */
 	$(".js--scroll-to-section-knowledge").click(function () {
@@ -28,12 +48,16 @@ $(document).ready(function () {
 		);
 	});
 
+
+
+/*
 	$(".js--scroll-to-section-education").click(function () {
 		$("html, body").animate(
 			{ scrollTop: $(".js--section-education").offset().top },
 			1000
 		);
 	});
+	
 
 	$(".js--scroll-to-section-plans").click(function () {
 		$("html, body").animate(
@@ -49,19 +73,7 @@ $(document).ready(function () {
 		);
 	});
 
-	$(".js--scroll-to-section-about").click(function () {
-		$("html, body").animate(
-			{ scrollTop: $(".js--section-about").offset().top },
-			1000
-		);
-	});
-
-	$(".js--scroll-to-section-about").click(function () {
-		$("html, body").animate(
-			{ scrollTop: $(".js--section-about").offset().top },
-			1000
-		);
-	});
+	
 
 	$(".js--scroll-to-top").click(function () {
 		$("html, body").animate(
@@ -69,7 +81,7 @@ $(document).ready(function () {
 			1000
 		);
 	});
-
+*/
 
 
 
@@ -217,3 +229,4 @@ $(".bullets").click(function () {
 	$(".slider-img").fadeOut(0);
 	$(".slider-img:nth-child(" + currIndex + ")").fadeIn();
 });
+
