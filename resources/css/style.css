@@ -24,12 +24,12 @@ LANGUAGE SWITCH
 
 .lang_switch{
   color:gray;
-  font-size: 25px;
 z-index: 19999;
 position: fixed;
-margin-top: 60px;
+margin-top: 3px;
+margin-left: 5rem;
 background-color: #fff;
-border: 0.5rem outset rgb(65, 153, 236);
+
 
 
 border-radius: 12px;
@@ -37,6 +37,26 @@ font: bold 1rem sans-serif;
 
 
 outline-offset: 0.3rem;
+}
+
+.lang_switch img {
+  width: 27%;
+  height: 27%;
+  opacity:0.5;
+transition: 2s ease;
+}
+
+.lang_switch img:hover,
+.lang_switch img:active{
+  
+ 
+  opacity:1;
+  
+  -webkit-transform: rotateZ(-60deg);
+-ms-transform: rotateZ(-60deg);
+transform: rotateZ(-60deg);
+transition: 2s ease;
+  
 }
 
 
