@@ -39,6 +39,7 @@ $(document).ready(function () {
 		}
 	);
 
+
 	/* Scroll on buttons */
 	$(".js--scroll-to-section-knowledge").click(function () {
 		$("html, body").animate(
@@ -47,6 +48,9 @@ $(document).ready(function () {
 		);
 	});
 
+
+
+/*
 	$(".js--scroll-to-section-education").click(function () {
 		$("html, body").animate(
 			{ scrollTop: $(".js--section-education").offset().top },
@@ -69,19 +73,7 @@ $(document).ready(function () {
 		);
 	});
 
-	$(".js--scroll-to-section-about").click(function () {
-		$("html, body").animate(
-			{ scrollTop: $(".js--section-about").offset().top },
-			1000
-		);
-	});
-
-	$(".js--scroll-to-section-about").click(function () {
-		$("html, body").animate(
-			{ scrollTop: $(".js--section-about").offset().top },
-			1000
-		);
-	});
+	
 
 	$(".js--scroll-to-top").click(function () {
 		$("html, body").animate(
@@ -89,7 +81,7 @@ $(document).ready(function () {
 			1000
 		);
 	});
-
+*/
 
 
 

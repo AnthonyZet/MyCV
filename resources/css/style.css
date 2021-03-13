@@ -14,6 +14,7 @@ LANGUAGE SWITCH
 .ln1 {display: none;}
 .ln2 {display: none;}
 .ln3 {display: none;}
+
 .lang1 .b.ln1 {display: block;}
 .lang2 .b.ln2 {display: block;}
 .lang3 .b.ln3 {display: block;}
@@ -629,12 +630,13 @@ blockquote:before {
 }
 
 .plan-box {
-min-height: 300px;
+min-height: 170px;
   background-color: #fff;
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
   box-shadow: 0 5px 5px #b5b0ab;
+  
 }
 .plan-box:hover{
 	cursor: pointer;
@@ -644,11 +646,13 @@ min-height: 300px;
 box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 0px -10px, rgb(255, 255, 255) 20px 0px 0px -10px, rgb(255, 255, 255) -20px 0px 0px -10px, rgb(49, 49, 49) 0px 0px 0px 10px, 5px 5px 15px 5px rgba(197,179,255,0);
 }
 .plan-box div {
-  padding: 15px;
+  padding: 20px 20px 5px 20px;
+  
 
 }
 
 .plan-box div:first-child {
+ 
   background-color: #dadada;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -656,6 +660,7 @@ box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 
 
 .plan-box div:last-child {
   text-align: center;
+  
 }
 
 .plan-price {
@@ -682,7 +687,7 @@ box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 
 /* ----------------------------------------------- */
 
 	.about-box{
-		height: 520px;
+		min-height: 220px;
 		padding: 30px;
 		margin-bottom: 100px;
 		border-radius: 10px;
@@ -710,6 +715,10 @@ transition: 1s ease;
 		list-style: none;
 		line-height: 35px;
 	}
+
+  
+
+
 
 
 	/* ----------------------------------------------- */
@@ -796,6 +805,48 @@ ul span {
   opacity : .7;
 }
 
+	/* ----------------------------------------------- */
+
+/* VIDEO GALLERY */
+
+/* ----------------------------------------------- */
+.video-gallery{
+ margin: 0 auto;
+ max-width: 80%;
+}
+
+.video-gallery h1{
+  font-size: 200%;
+  color: #000;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+
+.gallery-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  
+  
+}
+
+.video-cover {
+ 
+ 
+ flex: 1 0 30%;
+ margin: 1rem;
+ 
+  
+}
+
+.video-cover iframe{
+  width: 100%;
+  height: 50vh;
+}
 
 
 /* ----------------------------------------------- */
