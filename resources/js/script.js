@@ -35,7 +35,7 @@ $(document).ready(function () {
 			}
 		},
 		{
-			offset: "96px",
+			offset: "9px",
 		}
 	);
 
