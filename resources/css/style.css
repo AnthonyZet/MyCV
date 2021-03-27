@@ -24,12 +24,12 @@ LANGUAGE SWITCH
 
 .lang_switch{
   color:gray;
-  font-size: 25px;
 z-index: 19999;
 position: fixed;
-margin-top: 60px;
-background-color: #fff;
-border: 0.5rem outset rgb(65, 153, 236);
+margin-top: 9px;
+margin-left: 5rem;
+
+
 
 
 border-radius: 12px;
@@ -37,6 +37,26 @@ font: bold 1rem sans-serif;
 
 
 outline-offset: 0.3rem;
+}
+
+.lang_switch img {
+  width: 27%;
+  height: 27%;
+  opacity:0.5;
+transition: 2s ease;
+}
+
+.lang_switch img:hover,
+.lang_switch img:active{
+  
+ 
+  opacity:1;
+  
+  -webkit-transform: rotateZ(-60deg);
+-ms-transform: rotateZ(-60deg);
+transform: rotateZ(-60deg);
+transition: 2s ease;
+  
 }
 
 
@@ -158,7 +178,9 @@ strong {
 margin-bottom: 5px;
 }
 
-
+header {
+  margin-bottom: 10vh;
+}
 
 /*-------------------------------------------------*/
 
@@ -552,6 +574,17 @@ Mobile navi
 height: 300px;
 }
 
+.boxTop ul{
+padding: 1rem;
+font-weight: 700;
+}
+
+.boxTop ul li{
+  text-align: center;
+  list-style: none;
+  padding: 0.3rem;
+}
+
 .box img {
   width: 100%;
   height: auto;
@@ -685,6 +718,11 @@ box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 
 /* ABOUT */
 
 /* ----------------------------------------------- */
+
+
+  .section-about{
+    text-align: center;
+  }
 
 	.about-box{
 		min-height: 220px;

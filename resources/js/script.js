@@ -35,7 +35,7 @@ $(document).ready(function () {
 			}
 		},
 		{
-			offset: "960px;",
+			offset: "9px",
 		}
 	);
 
@@ -194,20 +194,7 @@ win.on("scroll", function () {
 
 		});
 
-		/* GOOGLE MENU */
-		/*
-	$('.js--nav-icon').click(function() {
-       var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon ion-icon');
-
-       if (icon.attr("name") == "menu-outline") {
-					icon.attr("name", "close-circle-outline");
-				} else {
-					icon.attr("name", "menu-outline");
-				}
-				 nav.slideToggle(200);
-    });
-*/
+	
 	$(".js--nav-icon").click(function () {
 		var nav = $(".js--main-nav");
 		var icon = $(".js--nav-icon ion-icon");
