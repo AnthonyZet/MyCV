@@ -32,48 +32,40 @@
 
 
         <span class="lang_switch">
-            <a class="left-top-font" onclick="set_lang('lang1')" href="#ln1" style="color:red"><img
+            <a class="left-top-font" id="cz" onclick="set_lang('lang1')" href="#ln1" style="color:red"><img
                     src="https://img.icons8.com/color/48/000000/czech-republic-circular.png" /></a> 
-            <a class="left-top-font" onclick="set_lang('lang2')" href="#ln2" style="color:red"><img
+            <a class="left-top-font" id="en" onclick="set_lang('lang2')" href="#ln2" style="color:red"><img
                     src="https://img.icons8.com/color/48/000000/usa-circular.png" /></a> 
-            <a class="left-top-font" onclick="set_lang('lang3')" href="#ln3" style="color:red"><img
+            <a class="left-top-font" id="de" onclick="set_lang('lang3')" href="#ln3" style="color:red"><img
                     src="https://img.icons8.com/color/48/000000/germany-circular.png" /></a>
 
         </span>
 
-        <div class="flags">
-            <a href="#" title="English"><span class="flag en"></span></a>
-            <a href="#" title="Cymraeg"><span class="flag cy"></span></a>
-            <a href="#" title="Francais"><span class="flag fr"></span></a>
-            <a href="#" title="Belgique"><span class="flag be"></span></a>
-            <a href="#" title="Italia"><span class="flag it"></span></a>
-            <a href="#" title="Deutch"><span class="flag de"></span></a>
-        </div>
-
+      
 
 
         <nav class="js--nav-top">
             <div class="row">
-                <a href="#">
+                <a class="top-az-pict" href="#">
                     <img src="resources/img/logo-white.png" alt="AZ logo" class="logo">
                     <img src="resources/img/logo.png" alt="AZ logo" class="logo-black js--scroll-to-top">
                 </a>
 
-                <ul class="main-nav js--main-nav ln1">
+                <ul class="main-nav js--main-nav ln1 menuActive" id="mobile-menu-ln1">
                     <li><a class="menuLink" href="#knowledge">Co umím</a></li>
                     <li><a class="menuLink" href="#education">Vzdělání, praxe</a></li>
                     <li><a class="menuLink" href="#plans">Ostatní znalosti</a></li>
                     <li><a class="menuLink" href="#about">About</a></li>
                 </ul>
 
-                <ul class="main-nav js--main-nav ln2">
+                <ul class="main-nav js--main-nav ln2" id="mobile-menu-ln2">
                     <li><a class="menuLink" href="#knowledge-en">Skills</a></li>
                     <li><a class="menuLink" href="#education-en">Education</a></li>
                     <li><a class="menuLink" href="#plans-en">Another knowledge</a></li>
                     <li><a class="menuLink" href="#about-en">About</a></li>
                 </ul>
 
-                <ul class="main-nav js--main-nav ln3">
+                <ul class="main-nav js--main-nav ln3" id="mobile-menu-ln3">
                     <li><a class="menuLink" href="#knowledge-de">Fähigkeiten</a></li>
                     <li><a class="menuLink" href="#education-de">Ausbildung</a></li>
                     <li><a class="menuLink" href="#plans-de">Andere Kenntnisse</a></li>
