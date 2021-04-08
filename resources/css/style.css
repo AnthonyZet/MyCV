@@ -26,9 +26,9 @@ LANGUAGE SWITCH
   color:gray;
 z-index: 19999;
 position: fixed;
-margin-top: 3px;
+margin-top: 9px;
 margin-left: 5rem;
-background-color: #fff;
+
 
 
 
@@ -178,7 +178,9 @@ strong {
 margin-bottom: 5px;
 }
 
-
+header {
+  margin-bottom: 10vh;
+}
 
 /*-------------------------------------------------*/
 
@@ -572,6 +574,17 @@ Mobile navi
 height: 300px;
 }
 
+.boxTop ul{
+padding: 1rem;
+font-weight: 700;
+}
+
+.boxTop ul li{
+  text-align: center;
+  list-style: none;
+  padding: 0.3rem;
+}
+
 .box img {
   width: 100%;
   height: auto;
@@ -705,6 +718,11 @@ box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 
 /* ABOUT */
 
 /* ----------------------------------------------- */
+
+
+  .section-about{
+    text-align: center;
+  }
 
 	.about-box{
 		min-height: 220px;

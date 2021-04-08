@@ -13,14 +13,32 @@ function set_lang(lang)
 
 
 $(document).ready(function () {
-
+ //
 	
+	$("#en").on("click", function () {
+		$("#mobile-menu-ln1").removeClass("menuActive");
+		$("#mobile-menu-ln3").removeClass("menuActive");
+		$("#mobile-menu-ln2").addClass("menuActive");
+	});
+
+	$("#de").on("click", function () {
+		$("#mobile-menu-ln1").removeClass("menuActive");
+		$("#mobile-menu-ln2").removeClass("menuActive");
+		$("#mobile-menu-ln3").addClass("menuActive");
+	});
+	$("#cz").on("click", function () {
+		$("#mobile-menu-ln2").removeClass("menuActive");
+		$("#mobile-menu-ln3").removeClass("menuActive");
+		$("#mobile-menu-ln1").addClass("menuActive");
+	});
+
+
+
+
 
 /*
-
-
+/////////////////
 */
-
 
 	$("#nezajima").on("click", function () {
 		alert("Klikáte špatně");
@@ -35,7 +53,7 @@ $(document).ready(function () {
 			}
 		},
 		{
-			offset: "960px;",
+			offset: "9px",
 		}
 	);
 
@@ -50,38 +68,6 @@ $(document).ready(function () {
 
 
 
-/*
-	$(".js--scroll-to-section-education").click(function () {
-		$("html, body").animate(
-			{ scrollTop: $(".js--section-education").offset().top },
-			1000
-		);
-	});
-	
-
-	$(".js--scroll-to-section-plans").click(function () {
-		$("html, body").animate(
-			{ scrollTop: $(".js--section-plans").offset().top },
-			1000
-		);
-	});
-
-	$(".js--scroll-to-section-about").click(function () {
-		$("html, body").animate(
-			{ scrollTop: $(".js--section-about").offset().top },
-			1000
-		);
-	});
-
-	
-
-	$(".js--scroll-to-top").click(function () {
-		$("html, body").animate(
-			{ scrollTop: 0},
-			1000
-		);
-	});
-*/
 
 
 
@@ -154,7 +140,7 @@ $(document).ready(function () {
 
 			$(".js--wp-5").waypoint(
 				function (direction) {
-					$(".js--wp-5").addClass("animated bounceInUp");
+					$(".js--wp-5").addClass("animated fadeInLeft");
 				},
 				{
 					offset: "80%",
@@ -194,20 +180,7 @@ win.on("scroll", function () {
 
 		});
 
-		/* GOOGLE MENU */
-		/*
-	$('.js--nav-icon').click(function() {
-       var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon ion-icon');
-
-       if (icon.attr("name") == "menu-outline") {
-					icon.attr("name", "close-circle-outline");
-				} else {
-					icon.attr("name", "menu-outline");
-				}
-				 nav.slideToggle(200);
-    });
-*/
+	
 	$(".js--nav-icon").click(function () {
 		var nav = $(".js--main-nav");
 		var icon = $(".js--nav-icon ion-icon");

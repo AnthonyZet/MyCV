@@ -1,3 +1,163 @@
+<<<<<<< HEAD
+@media only screen and (max-width: 1560px) {  
+    .top-az-pict, .logo-black{display: none;}
+   
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+	.name{
+		width: 100%;
+		padding: 0 2%;
+	}
+	.row {
+		padding: 0 2px;
+	}
+
+  
+
+}
+
+@media only screen and (max-width: 1080px){
+	 .icon-small {
+
+        margin-right: 1px;
+	}
+		.slider-img{
+	width: 80%;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+body {font-size: 1rem;}
+section{ padding: 60px 0px; }
+
+.long-copy{
+		width: 80%;
+		margin-left: 10%;
+}
+
+.steps-box { margin-top: 10px; }
+    .steps-box:last-child { margin-top: 10px; }
+    .works-steps { margin-bottom: 40px; }
+    .works-step:last-of-type { margin-bottom: 60px; }
+
+    .app-screen { width: 50%; }
+
+    .icon-small {
+        width: 17px;
+        margin-right: 5px;
+    }
+
+	.section-knowledge { font-size: 90%; }
+	.contact-form { width: 80%; }
+
+
+   
+}
+
+@media only screen and (max-width: 854px) {
+
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+
+    .row,
+    .name { padding: 0 4%; }
+    .col {
+		width: 50%;
+		height: 50%;
+        margin: 0 0 4% 0;
+    }
+
+   
+
+    .sticky .main-nav {
+        display: none;
+    }
+
+    
+.main-nav li{
+    display: none;
+}
+    .sticky .menuActive  li{
+        display: block;
+    }
+    .section-about .col{
+    width: 100%;
+    }
+
+
+    .section-knowledge { font-size: 150%; 
+    text-align: center;}
+
+   .section-plans .col{
+    width: 100%;
+   }
+
+.lang_switch{
+    margin-left: 10px;
+   
+}
+
+    .main-nav { display: none; }
+    .mobile-nav-icon {display: inline-block;}
+    
+    .main-nav {
+       float: left;
+       width: 90%;
+       margin-left: 15vh;
+        margin-top: 30px;
+        
+        
+    }
+    .mobile-nav-icon{
+        position: relative;
+        
+        
+       
+    }
+    
+    .main-nav li {
+       
+        
+        width: 100%;       
+        
+    }
+  
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+       display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+        
+	}
+	 .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+
+    .video-cover{
+        flex: 1 0 80%;
+    }
+
+    
+}
+
+
+
+
+@media only screen and (max-width: 555px) {
+
+    .section-knowledge { font-size: 0.8rem; 
+        
+=======
 @media only screen and (max-width: 1200px) {
 	.name{
 		width: 100%;
@@ -14,12 +174,12 @@
         margin-right: 1px;
 	}
 		.slider-img{
-	width: 70%;
+	width: 80%;
 }
 }
 
 @media only screen and (max-width: 1023px) {
-body {font-size: 18px;}
+body {font-size: 1rem;}
 section{ padding: 60px 0px; }
 
 .long-copy{
@@ -47,7 +207,7 @@ section{ padding: 60px 0px; }
 
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 842px) {
 
     body { font-size: 16px; }
     section { padding: 30px 0; }
@@ -55,11 +215,27 @@ section{ padding: 60px 0px; }
     .row,
     .name { padding: 0 4%; }
     .col {
-		width: 100%;
-		height: 90%;
+		width: 50%;
+		height: 50%;
         margin: 0 0 4% 0;
     }
 
+    .section-about .col{
+    width: 100%;
+    }
+
+
+    .section-knowledge { font-size: 150%; 
+    text-align: center;}
+
+   .section-plans .col{
+    width: 100%;
+   }
+
+.lang_switch{
+    margin-left: 10px;
+    margin-top: 40px;
+}
 
     .main-nav { display: none; }
     .mobile-nav-icon {display: inline-block;}
@@ -72,6 +248,7 @@ section{ padding: 60px 0px; }
 
     .main-nav li {
         display: block;
+        
     }
 
     .main-nav li a:link,
@@ -87,8 +264,20 @@ section{ padding: 60px 0px; }
     .sticky .main-nav li a:visited { padding: 10px 0; }
     .sticky .mobile-nav-icon { margin-top: 10px; }
     .sticky .mobile-nav-icon i { color: #555; }
+
+   
+
+    .video-cover{
+        flex: 1 0 80%;
+    }
 }
 
 
 
-@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 555px) {
+
+    .section-knowledge { font-size: 0.8rem; 
+        
+>>>>>>> 30ec4d54869b65342e96bc50a199ae74213ac95gi2
+}
