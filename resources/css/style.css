@@ -26,7 +26,7 @@ LANGUAGE SWITCH
   color:gray;
 z-index: 19999;
 position: fixed;
-margin-top: 9px;
+margin-top: 5px;
 margin-left: 5rem;
 
 
@@ -208,7 +208,10 @@ header {
 /* ----- ICONS ----- */
 
 /*------------------------------------------------------*/
-
+.plan-box div ion-icon{
+  color: orange;
+  font-size: 150%;
+}
 
 .icon-big {
   font-size: 350%;
@@ -526,7 +529,7 @@ Mobile navi
 /* ----------------------------------------------- */
 .section-ostatni {
   padding: 0;
-  margin-top: 70px;
+ 
 }
 
 .ostatni-showcase {
@@ -710,6 +713,16 @@ box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 
 
 .plan-box ul li {
   padding: 5px 0;
+}
+
+#plan-box-2{
+  margin-top: 15px;
+}
+
+.plan-box-h3-2{
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(128, 133, 131, 0.219);
 }
 
 

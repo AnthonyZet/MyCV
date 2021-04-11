@@ -54,7 +54,10 @@ section{ padding: 60px 0px; }
 	.section-knowledge { font-size: 90%; }
 	.contact-form { width: 80%; }
 
-
+    .ostatni-showcase li {
+       
+        width: 50%;
+      }
    
 }
 
@@ -101,6 +104,11 @@ section{ padding: 60px 0px; }
    
 }
 
+.lang_switch img{
+    margin-top: 5px;
+    
+}
+
     .main-nav { display: none; }
     .mobile-nav-icon {display: inline-block;}
     
@@ -142,6 +150,9 @@ section{ padding: 60px 0px; }
 
     .sticky .mobile-nav-icon { margin-top: 10px; }
     .sticky .mobile-nav-icon i { color: #555; }
+
+
+    
 
     .video-cover{
         flex: 1 0 80%;
@@ -232,10 +243,10 @@ section{ padding: 60px 0px; }
     width: 100%;
    }
 
-.lang_switch{
-    margin-left: 10px;
-    margin-top: 40px;
-}
+
+
+
+
 
     .main-nav { display: none; }
     .mobile-nav-icon {display: inline-block;}
