@@ -80,10 +80,10 @@ section{ padding: 60px 0px; }
         display: none;
     }
 
-    
-.main-nav li{
-    display: none;
-}
+        
+    .main-nav li{
+        display: none;
+    }
     .sticky .menuActive  li{
         display: block;
     }
@@ -99,15 +99,15 @@ section{ padding: 60px 0px; }
     width: 100%;
    }
 
-.lang_switch{
-    margin-left: 10px;
-   
-}
-
-.lang_switch img{
-    margin-top: 5px;
+    .lang_switch{
+        margin-left: 10px;
     
-}
+    }
+
+    .lang_switch img{
+        margin-top: 5px;
+        
+    }
 
     .main-nav { display: none; }
     .mobile-nav-icon {display: inline-block;}
@@ -169,3 +169,4 @@ section{ padding: 60px 0px; }
     .section-knowledge { font-size: 0.8rem; 
         
     }
+}
