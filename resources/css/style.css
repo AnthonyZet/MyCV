@@ -670,16 +670,29 @@ min-height: 170px;
   background-color: #fff;
   border-radius: 5px;
   width: 90%;
+  margin-bottom: 50px;
   margin-left: 5%;
   box-shadow: 0 5px 5px #b5b0ab;
-  
+  box-shadow: 0 1.5rem 4rem rgba(black, .5);
+  transition: transform .3s;
 }
+
+.plan-box:nth-child(2){
+  margin-top: 200px;
+}
+
 .plan-box:hover{
 	cursor: pointer;
+  transform: translateY(-1.5rem) scale(1);
+  
 	transition: 1s ease;
-	background-color: rgba(129, 129, 129, 0.02);
-	-webkit-box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 0px -10px, rgb(255, 255, 255) 20px 0px 0px -10px, rgb(255, 255, 255) -20px 0px 0px -10px, rgb(161, 161, 161) 0px 0px 0px 10px, 5px 5px 15px 5px rgba(197,179,255,0);
-box-shadow: rgb(255, 255, 255) 0px 20px 0px -10px, rgb(255, 255, 255) 0px -20px 0px -10px, rgb(255, 255, 255) 20px 0px 0px -10px, rgb(255, 255, 255) -20px 0px 0px -10px, rgb(49, 49, 49) 0px 0px 0px 10px, 5px 5px 15px 5px rgba(197,179,255,0);
+  /*
+  -moz-transform: translate(0px, -15px);
+-webkit-transform: translate(0px, -15px);
+-o-transform: translate(0px, -15px);
+-ms-transform: translate(0px, -15px);
+transform: translate(0px, -15px);
+*/
 }
 .plan-box div {
   padding: 20px 20px 5px 20px;

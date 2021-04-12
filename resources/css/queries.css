@@ -38,7 +38,10 @@ section{ padding: 60px 0px; }
 		width: 80%;
 		margin-left: 10%;
 }
-
+.section-about .col{
+    width: 100%;
+   
+    }
 .steps-box { margin-top: 10px; }
     .steps-box:last-child { margin-top: 10px; }
     .works-steps { margin-bottom: 40px; }
@@ -50,6 +53,9 @@ section{ padding: 60px 0px; }
         width: 17px;
         margin-right: 5px;
     }
+
+    
+    
 
 	.section-knowledge { font-size: 90%; }
 	.contact-form { width: 80%; }
@@ -87,6 +93,9 @@ section{ padding: 60px 0px; }
     .sticky .menuActive  li{
         display: block;
     }
+    .section-plans .col{
+        width: 100%;
+       }
     .section-about .col{
     width: 100%;
     }
@@ -95,10 +104,7 @@ section{ padding: 60px 0px; }
     .section-knowledge { font-size: 150%; 
     text-align: center;}
 
-   .section-plans .col{
-    width: 100%;
-   }
-
+  
     .lang_switch{
         margin-left: 10px;
     
