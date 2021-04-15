@@ -677,9 +677,8 @@ min-height: 170px;
   transition: transform .3s;
 }
 
-.plan-box:nth-child(2){
-  margin-top: 200px;
-}
+
+
 
 .plan-box:hover{
 	cursor: pointer;
@@ -728,15 +727,32 @@ transform: translate(0px, -15px);
   padding: 5px 0;
 }
 
+
+
 #plan-box-2{
-  margin-top: 15px;
+  margin-top: 101px;
 }
+
+#plan-box-3{
+  margin-top: 50px;
+}
+
+#plan-box-2-en{
+  margin-top: 152px;
+}
+
+#plan-box-2-de{
+  margin-top: 152px;
+}
+
 
 .plan-box-h3-2{
   width: 100%;
   padding: 15px;
   background-color: rgba(128, 133, 131, 0.219);
 }
+
+
 
 
 /* ----------------------------------------------- */

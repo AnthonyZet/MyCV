@@ -28,7 +28,10 @@
 		.slider-img{
 	width: 80%;
 }
-}
+
+.section-plans .col{
+    width: 100%;
+   }
 
 @media only screen and (max-width: 1023px) {
 body {font-size: 1rem;}
@@ -38,10 +41,7 @@ section{ padding: 60px 0px; }
 		width: 80%;
 		margin-left: 10%;
 }
-.section-about .col{
-    width: 100%;
-   
-    }
+
 .steps-box { margin-top: 10px; }
     .steps-box:last-child { margin-top: 10px; }
     .works-steps { margin-bottom: 40px; }
@@ -64,7 +64,30 @@ section{ padding: 60px 0px; }
        
         width: 50%;
       }
-   
+      #plan-box-2{
+        margin-top: 0px;
+      }
+      
+      #plan-box-3{
+        margin-top: 0px;
+        margin-left: 25px;
+      }
+      
+      #plan-box-2-en{
+        margin-top: 0px;
+       
+      }
+      
+      #plan-box-2-de{
+        margin-top: 0px;
+        
+      } 
+      
+      .section-plans .col:nth-child(3)
+      {
+     
+        margin-left: 0px;
+      }
 }
 
 @media only screen and (max-width: 854px) {
